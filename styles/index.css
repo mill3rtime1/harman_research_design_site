@@ -1,0 +1,16 @@
+body {
+  margin-bottom: 60px; /* Margin bottom by footer height */
+
+  background: url('http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-169280.jpg') no-repeat center center;
+  /* Ensure the html element always takes up the full height of the browser window */
+  /* The Magic */
+  background-size: cover;
+  min-height: 100vh;
+  /*padding-top: 20px;*/
+  padding-bottom: 20px;
+}
+
+nav {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
