@@ -13,12 +13,25 @@ button {
   text-transform: uppercase;
 }
 
+a.navbar-brand:hover {
+  text-decoration: underline;
+}
+
 a.nav-link {
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
   color: white !important;
   text-transform: uppercase;
+}
+
+a.nav-link:hover {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: white !important;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 
 a.navbar-brand {
@@ -32,6 +45,24 @@ a.navbar-brand {
   font-weight: 600;
   color: white !important;
   text-transform: uppercase; 
+}
+
+.active>.nav-link:hover  {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  color: white !important;
+  text-transform: uppercase;
+  text-decoration: underline; 
+}
+
+hr {
+  height: 1px;
+}
+
+hr.red {
+  height: 3px;
+  background-color: var(--red);
 }
 
 nav {
