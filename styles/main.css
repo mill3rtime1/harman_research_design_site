@@ -17,6 +17,10 @@ button {
   color: white !important;
 }
 
+.black-text {
+  color: black !important;
+}
+
 a.navbar-brand:hover {
   text-decoration: underline;
 }
