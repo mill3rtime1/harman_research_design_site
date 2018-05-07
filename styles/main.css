@@ -209,8 +209,8 @@ p, body {
 
 /* Sepia */
 .hover09 img {
-  -webkit-filter: sepia(60%);
-  filter: sepia(60%);
+  -webkit-filter: sepia(20%);
+  filter: sepia(20%);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
