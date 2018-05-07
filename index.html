@@ -9,6 +9,9 @@
   href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
   <link rel="stylesheet" type="text/css" href="styles/index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+
 
   <!-- Linking Javascripts -->
   <script
@@ -19,11 +22,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
   <script type="text/javascript" src="javascripts/main.js"></script>
+  <script src="javascripts/smooth-scroll.js"></script>
 
   <title>Harman MHCI Capstone</title>
 </head>
 <body>
-
+  <div class="parallax">
   <div id="navbar">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
@@ -65,14 +69,95 @@
 
   <div class="container">
     <div class="hero-text">
-      <h1 class="display-3 animated fadeIn delayed-short white-text"><strong>Designing for the<br/>Future of Cars.</strong></h1>
+      <h1 class="text-center display-3 animated fadeIn delayed-short white-text"><strong>Designing for the<br/>Future of Cars</strong></h1>
       <br/>
-      <h2 class="animated fadeIn delayed white-text">MHCI '18 Capstone Project with Harman International's Future Experiences Group</p>
+      <h2 class="text-center animated fadeIn delayed white-text">Six MHCI students working with Harman International to improve the user experience of autonomous vehicles</h2>
       <br/>
-      <a href="research.html" class="animated fadeIn delayed-2"><button type="button" class="btn btn-outline-light btn-lg">VIEW RESEARCH</button></a>
+    </div>
+    <div class="low-text">
+      <a href="#summary">
+        <p class="animated fadeIn white-text">Learn More</p>
+        <i class="carat fa fa-caret-down white-text" aria-hidden="true"></i>
+      </a>
     </div>
   </div>
+</div>
 
+<div class="row fifty" id="summary">
+  <div class="col-6">
+  <div class=" second-index offset-md-3">
+    <h2>Project Summary</h2>
+    <p>
+      To date, much of the work on vehicle autonomy involves proving the feasibility of the technology and ensuring safety and reliability. While stakeholders such as regulatory organizations, manufacturers and insurance companies have investigated the impact of autonomous vehicles (AV) on policy and business models, there has been less focus on the implications to human experience. A more complete understanding of human preferences for interacting with autonomous vehicles is needed to inform both the technical development of these systems and business decisions about how they create value. 
+    </p>
+  </div>
+</div>
+  <div class="col-6">
+  <div class="container second-index">
+    <img src="images/tesla.png" class="img-fluid">
+  </div>
+</div>
+</div>
+
+<div class="row fifty grey">
+  <div class="col-6">
+  <div class=" offset-md-3 second-index">
+    <img src="images/logo.png" class="img-fluid">
+  </div>
+</div>
+  <div class="col-5">
+  <div class=" container second-index">
+    <h2>Harman International</h2>
+    <p>
+      Harman International designs and engineers connected products and solutions for automakers, consumers, and enterprises worldwide. This includes connected car systems, audio and visual products, and enterprise automation solutions. Harman serves the world’s automakers with embedded infotainment, telematics, connected safety and security capabilities.
+    </p>
+  </div>
+</div>
+</div>
+
+<div class="row eighty second-index">
+  <div class="container">
+    <h2 class="text-center">Where We Started</h2>
+    <img src="images/diagram.png" class="img-fluid" id="diagram">
+    <div class="row">
+    <div class="col-6">
+      <p>
+        With Harman, we had the opportunity to explore and improve the user experience of autonomous vehicles. The domain is new, vast, and there are many avenues we could have taken, but we were motivated to improve on the autonomous driving experience for those who would be effected most, the driver. The best experience is achieved for the user when they are empowered with agency throughout the drive. We focused our efforts on giving drivers control of their vehicle.
+      </p>    
+    </div>
+    <div class="col-6">
+    <p>
+      This is accomplished by human decision making and control in collaboration with the vehicle’s artificial intelligence. We believe the best AV driving experience is achieved when the driver can feel, and maintain, a sense of agency throughout their drive. 
+    </p>
+    <p>
+      Read more about <a href="background.html">Background</a> & <a href="research.html">Research</a>
+    </p>
+  </div>
+</div>
+  </div>
+  
+</div>
+
+<div class="row fifty grey">
+  <div class="col-6">
+  <div class=" second-index offset-md-3">
+    <h2>Our Solution</h2>
+    <p>
+      With our direction in mind, we designed a curved interface that is implemented within the vehicle dashboard. This product exclusively provides the driver different aspects of control in unique situations during their autonomous driving experience.
+    </p>
+    <p>
+      Read more about <a href="design.html">Design</a>
+    </p>
+  </div>
+</div>
+  <div class="col-6">
+  <div class="container second-index">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="images/SS2BC.png"></iframe>
+    </div>
+  </div>
+</div>
+</div>
 
 </body>
 <footer class="footer">
@@ -80,4 +165,7 @@
     <span class="text-muted">2018 MHCI Capstone</span>
   </div>
 </footer>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]');
+</script>
 </html>

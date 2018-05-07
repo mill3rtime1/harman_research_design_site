@@ -1,7 +1,6 @@
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
 
-  background: url('http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-169280.jpg') no-repeat center center;
   /* Ensure the html element always takes up the full height of the browser window */
   /* The Magic */
   background-size: cover;
@@ -10,7 +9,63 @@ body {
   padding-bottom: 20px;
 }
 
+body, html {
+    height: 100%;
+}
+
+.parallax { 
+    /* The image used */
+  background-image: url('http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-169280.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grey {
+  background-color: #ECECEC !important;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: white;
+  border-top: 0.5px solid var(--grey);
+}
+
+.fifty {
+  height: 50%;
+}
+
+.eighty {
+  height: 80%;
+}
+
 nav {
   margin-top: 0px;
   margin-bottom: 20px;
 }
+
+.carat {
+  position: absolute;
+  left: 40%;
+}
+
+.second-index {
+  margin-top: 60px;
+}
+
+#diagram {
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+
+
