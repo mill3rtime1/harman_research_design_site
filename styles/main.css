@@ -17,6 +17,10 @@ a {
   color: var(--red);
 }
 
+.text-red {
+  color: var(--red);
+}
+
 .white-text {
   color: white !important;
 }
