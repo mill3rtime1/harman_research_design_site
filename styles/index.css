@@ -49,10 +49,11 @@ body, html {
   height: 600px;
 }
 
-nav {
-  margin-top: 0px;
-  margin-bottom: 20px;
+#navbar {
+  margin-bottom: 0 !important;
 }
+
+
 
 .carat {
   position: absolute;

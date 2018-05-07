@@ -19,13 +19,14 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
   <script type="text/javascript" src="javascripts/main.js"></script>
+  <script src="javascripts/smooth-scroll.js"></script>
 
   <title>Harman MHCI Capstone</title>
 </head>
 <body>
 
   <div id="navbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">MHCI x HARMAN</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,8 +44,8 @@
                 RESEARCH
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="research.html">summary</a>
-                <a class="dropdown-item" href="research_documentation.html">full documentation</a>
+                <a class="dropdown-item" href="research.html">SUMMARY</a>
+                <a class="dropdown-item" href="research_documentation.html">FULL DOCUMENTATION</a>
               </div>
             </li>
             <li class="nav-item">
@@ -65,18 +66,21 @@
 
   <div class="container animated fadeIn">
     <div class="row">
-      <div class="col-3">
+      <div class="position-fixed">
+        <div class="col-7">
         <h1 class="">The context of design</h1>
-        <p>Folk Model of Autonomy</p>
       </div>
+      </div>
+      <div class="col-3"></div>
 
-      <div class="col-9">
-        <p>
-          Through our research we found that there is a common miconception about autonomy: that it is binary. The prevailing idea is that the occupant of the vehicle is either not driving at all because the vehilce has taken over, or that the occupant is engaged fully in a manual driving task.
-        </p>
+      <div class="col-9" id="top">
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="images/folk_model.png"></iframe>
         </div>
+        <h2>Folk Model of Autonomy</h2>
+        <p>
+          Through our research we found that there is a common miconception about autonomy: that it is binary. The prevailing idea is that the occupant of the vehicle is either not driving at all because the vehilce has taken over, or that the occupant is engaged fully in a manual driving task.
+        </p>
         <div class="row">
           <div class="col-sm-8">
             <p>
@@ -84,9 +88,7 @@
             </p>
           </div>
           <div class="col-sm-4">
-            <!-- <div class="col-sm-12"> -->
             <hr class="red"/>
-            <!-- </div> -->
             <h3>Caption</h3>
             <p>This is a photo caption<br/>or a bulleted list</p>
             <ul>
@@ -94,34 +96,48 @@
             </ul>
           </div>
         </div>
+    <hr/>
+    <div class="row">
+      <div class="image-holder">
+        <img src="images/af1.jpg" class="img-fluid">
+        <img src="images/af2.jpg" class="img-fluid">
       </div>
     </div>
     <div class="row">
-      <img src="images/af1.jpg" class="img-fluid">
-      <img src="images/af2.jpg" class="img-fluid">
-    </div>
-    <div class="row">
       <h2>Who's In Control</h2>
-      <p>Technology gradually shifting toward a state in which the vehicle can handle every single possible situation, without the need for human supervision or intervention.
-      That shift is occurring over time, as AI masters more and more of the multitude of tasks involved in driving.</p>
-      <img src="images/grad.png" class="img-fluid">
-    </div>  
+      <p>Technology is gradually shifting toward a state in which the vehicle can handle every single possible situation, without the need for human supervision or intervention.
+    That shift is occurring over time, as AI masters more and more of the multitude of tasks involved in driving.</p>
+      <div class="image-holder">
+        <img src="images/grad.png" class="img-fluid">
+      </div>
+    </div>
+    <hr/>  
     <div class="row">
       <h2>State of Self-Driving Technology</h2>
-      <p>Today, Tesla's AutoPilot is the most advanced commercially autonomous driving system. It can maintain a position in a lane, change lanes, and adaptively control your distance to the car in front. It is only intended for use on highways. Other companies have achieved greater capabilities, but the technology is only reliable in highly controlled environments.</p>
-      <img src="images/dr2.jpg" class="img-fluid">
+      <p>Today, Tesla's AutoPilot is the most advanced commercially available autonomous driving system. It can maintain a position in a lane, change lanes, and adaptively control your distance to the car in front. It is only intended for use on highways. Other companies have achieved greater capabilities, but the technology is only reliable in highly controlled environments. </p>
+      <div class="image-holder">
+        <img src="images/dr2.jpg" class="img-fluid">
+      </div>
     </div>
+    <hr/>
     <div class="row">
       <h2>Designing for the Next 5-10 Years</h2>
-      <p>During the gradual shift towards full autonomy the driver and and the vehicle are sharing control and this is the period for which we are designing and focused our research effort.
-
-      The difficulty moving past that period, of capturing all of the complex edge cases at the end of the spectrum required for full autonomy, is the reason that companies like Nissan are investing in centers that can virtually control your vehicle. They also do not think full autonomy will occur in the next 5-10 years.</p>
-      <img src="images/dr3.jpg" class="img-fluid">
+      <p>During the gradual shift towards full autonomy the driver and and the vehicle are sharing control and this is the period for which we are designing as well as where we focused our research effort.
+      </p>
+      <p>
+        The difficulty moving past that period, of capturing all of the complex edge cases at the end of the spectrum required for full autonomy, is the reason that companies like Nissan are investing in centers that can virtually control your vehicle. They also do not believe that full autonomy will occur in the next 5-10 years
+      </p>
+      <div class="image-holder">
+        <img src="images/dr3.jpg" class="img-fluid">
+      </div>
     </div>
+    <hr/>
     <div class="row">
       <h2>A Better System for Shared Control</h2>
-      <p>Today, when an a passenger encounters an edge case outside of the vehicle's capabiltiies, or where they are dissatisfied with the choice of the vehicle and want to influence the decisions being made by an autonomous vehicle, the primary option is to fully takeover driving, then hand back control.</p>
-      <img src="images/a3.jpg" class="img-fluid">
+      <p>Today, when an a passenger encounters an edge case outside of the vehicle's capabiltiies, or when they are dissatisfied with the choice of the vehicle and want to influence the decisions being made by an autonomous vehicle, the primary option is to fully takeover driving, then hand back control.</p>
+      <div class="image-holder">
+        <img src="images/a3.jpg" class="img-fluid">
+      </div>
     </div> 
     <div class="row">
       <div class="col-sm-8">
@@ -129,24 +145,36 @@
       </div>
       <div class="col-sm-4">
         <hr class="red"/>
-        <h3>The paradigm of full takeover to handoff is laborious and not well suited for individual adjustments executed throughout a drive.</h3>
+        <p>The paradigm of full takeover to handoff is laborious and not well suited for individual adjustments executed throughout a drive.</p>
       </div>
     </div>
+    <hr/>
     <div class="row">
-      <h2>An Interface for Collaboartive Control</h2>
-      <img src="images/loop.png" class="img-fluid">
-      <p>We concluded that in order to ensure a positive driving experience in a semi autonomous/co driving context, the human has to be more than a babysitter for the vehicle; they cannot simply supervise, but rather they must be an active participant in their own experience.
-
-      We facilitate active participation through a curved interface that clearly delineates the intentions of the vehicle from the options of the driver has to influence their experience.
-
-      As a focus of our research, we sought to identify what those influences should be.</p>
+      <h2>An Interface for Collaborative Control</h2>
+      <div class="image-holder">
+        <img src="images/loop.png" class="img-fluid">
+      </div>
+      <p>
+        We concluded that in order to ensure a positive driving experience in a semi-autonomous/co driving context, the human has to be more than a babysitter for the vehicle; they cannot simply supervise, but rather they must be an active participant in their own experience.
+      </p>
+      <p>
+        We facilitate active participation through a curved interface that clearly delineates the intentions of the vehicle from the options that the driver has to influence his or her own experience.
+      </p>
+      <p>
+        As a focus of our research, we sought to identify what those influences should be.
+      </p>
+      <a href="#top">Back to Top</a>
     </div> 
   </div>
-
+  </div>
+</div>
 </body>
 <footer class="footer">
   <div class="container text-center">
     <span class="text-muted">2018 MHCI Capstone</span>
   </div>
 </footer>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]');
+</script>
 </html>

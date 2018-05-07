@@ -135,6 +135,24 @@ body {
   font-family: 'Roboto';
 }
 
+.image-holder {
+  height: 10%;
+}
+
+.image-holder img {
+  display: block;
+  max-width: 60% !important;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cent-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h1 {
   font-size: 36px;
   line-height: 42px;
@@ -207,6 +225,10 @@ p, body {
     color: white;
 }
 
+.bottom {
+  margin-bottom: 4%;
+}
+
 /* Sepia */
 .hover09 img {
   -webkit-filter: sepia(20%);
@@ -229,4 +251,22 @@ p, body {
 
 .delayed-2 {
   -webkit-animation-delay: 1.3s !important;
+}
+
+#navbar {
+  margin-bottom: 5%;
+}
+
+
+.sidenav {
+   margin-top: 4%;
+   height: 100%; /* Full-height: remove this if you want "auto" height */
+   width: 10%;  /*Set the width of the sidebar */
+   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+   z-index: 1; /* Stay on top */
+   top: 0; /* Stay at the top */
+   left: 10%;
+   background-color: #FFFFFF; /* Black */
+   overflow-x: hidden; /* Disable horizontal scroll */
+   padding-top: 20px;
 }

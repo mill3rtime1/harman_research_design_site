@@ -25,7 +25,7 @@
 <body>
 
   <div id="navbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">MHCI x HARMAN</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,8 +43,8 @@
                 RESEARCH
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="research.html">summary</a>
-                <a class="dropdown-item" href="research_documentation.html">full documentation</a>
+                <a class="dropdown-item" href="research.html">SUMMARY</a>
+                <a class="dropdown-item" href="research_documentation.html">FULL DOCUMENTATION</a>
               </div>
             </li>
             <li class="nav-item active">
@@ -65,13 +65,16 @@
 
   <div class="container animated fadeIn">
     <div class="row">
-      <div class="col-3">
-        <h1 class="">A Curved Interface for Human-Machine Collaboration</h1>
-        <p>We designed a curved interface that is implemented within the vehicle dashboard. You can visualize our solution in this illustration here in the green. This product exclusively provides the driver different aspects of control in unique situations during their autonomous driving experience.</p>
+
+    <div class="position-fixed">
+        <div class="col-7">
+        <h1 class="">A Curved Interface for HMI</h1>
       </div>
+      </div>
+      <div class="col-3"></div>
 
       <div class="col-9">
-        <img src="images/SS2BC.png" class="img-fluid">
+        <img src="images/SS2BC.png" class="img-fluid bottom cent-img">
         <div class="row">
           <div class="col-sm-8">
             <h2>Concept Development</h2>
@@ -79,21 +82,18 @@
           </div>
           <div class="col-sm-4">
             <hr class="red"/>
-            <h3>Caption</h3>
-            <p>This is a photo caption<br/>or a bulleted list</p>
-            <ul>
-              <li>one</li>
-            </ul>
+            <p>We designed a curved interface that is implemented within the vehicle dashboard. You can visualize our solution in this illustration here in the green. This product exclusively provides the driver different aspects of control in unique situations during their autonomous driving experience.</p>
           </div>
         </div>
         <div class="row">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="images/dxx1.png"></iframe>
+          <div class="image-holder">
+            <img src="images/flow.gif" class="img-fluid">
           </div>
           <div>
             <h4>Affordances and Interactions</h4>
             <p>There are four main affordances of this screen that we’ve tested with users that facilitate the assertion of their preferences to the self-driving car. Our interface helps with blind reaching by having a distinctive curve. It communicates location of hand position. It also allows users to understand relative distance as they move up the interface, facilitating minute adjustments like speeding up or down. Proprioception utilizes different perceptual channel. It prevents adding more stimulation to senses that are already overloaded while driving, like vision. Readying facilitates the natural control interaction of resting your hand on something while considering or before submitting an action. Our research with Tesla owners has shown that drivers rest hands on wheel when worried about proximity to median to prepare for takeover. It also avoids false positives because it doesn’t trigger action when the hand is static. The threshold allows driver to push decision up the surface to the vehicle. Driver crosses perceptual threshold based on changing curve angle. It requires intentionality to give directions to the car, and acts as a sort of confirmation. It also prevents false positives. Micro adjustments address the proximity preferences mentioned earlier. It allows user to change lane position based on comfort level.
             </p>
+            <img src="images/micro.png" class="img-fluid">
           </div>
         </div>
       </div>
