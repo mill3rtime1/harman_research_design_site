@@ -5,6 +5,28 @@
   --red: #900000;
 };
 
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
 button {
   font-size: 24px;
   line-height: 32px;
@@ -15,6 +37,19 @@ button {
 
 a {
   color: var(--red);
+}
+
+a.active {
+  background-color: var(--red) !important;
+}
+
+.grey {
+  background-color: var(--grey);
+}
+
+a.active.white-text {
+  background-color: var(--red) !important;
+  color: white !important;
 }
 
 .text-red {
