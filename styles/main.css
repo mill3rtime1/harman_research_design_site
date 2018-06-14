@@ -143,6 +143,11 @@ nav {
   position: unset;
   width: 100%;
 }
+
+.navbar-collapse {
+  z-index: 999;
+  background-color: var(--grey) !important;
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
