@@ -18,7 +18,8 @@ body, html {
   background-image: url('http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-169280.jpg');
 
     /* Full height */
-    height: 100%; 
+    height: 100%;
+    width: 100%; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -41,19 +42,10 @@ body, html {
   border-top: 0.5px solid var(--grey);
 }
 
-.fifty {
-  height: 500px;
-}
-
-.eighty {
-  height: 600px;
-}
 
 #navbar {
   margin-bottom: 0 !important;
 }
-
-
 
 .carat {
   position: absolute;
@@ -64,9 +56,103 @@ body, html {
   margin-top: 60px;
 }
 
-#diagram {
-  margin-left: 60px;
-  margin-bottom: 30px;
+.hero-text {
+  padding-top: 60px;
+}
+
+.not-on-mobile {
+  display: none !important;
+}
+
+.only-on-mobile {
+  display: unset !important;
+}
+
+.mobile-center {
+  text-align: center !important;
+}
+
+.row {
+  padding-bottom: 20px;
+}
+
+.display-3 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+.hero-text {
+  width: 75%;
+}
+
+.mobile-push{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.img-fluid {
+  max-width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .display-3 {
+    font-size: 3.25rem;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .img-fluid {
+    max-width: 90%;
+  }
+
+  .mobile-push{
+    padding-left: unset;
+    padding-right: unset;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .fifty {
+    height: 500px;
+  }
+
+  .mobile-center {
+    text-align: unset !important;
+  }
+
+  .row {
+    padding-bottom: unset;
+  }
+
+  .eighty {
+    height: 600px;
+  }
+
+  #diagram {
+    margin-left: 60px;
+    margin-bottom: 30px;
+  }
+
+  .display-3 {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .hero-text{
+    padding-top: 0;
+  }
+
+  .desktop-center {
+    text-align: center !important;
+  }
 }
 
 

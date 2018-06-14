@@ -27,6 +27,24 @@ html {
   }
 }
 
+.not-on-mobile {
+  display: none !important;
+}
+
+.only-on-mobile {
+  display: unset !important;
+}
+
+@media screen and (min-width: 801px) {
+  .not-on-mobile {
+    display: unset !important;
+  }
+
+  .only-on-mobile {
+    display: none !important;
+  }
+}
+
 button {
   font-size: 24px;
   line-height: 32px;
@@ -122,6 +140,8 @@ nav {
 
 .navbar {
   background-color: var(--grey) !important;
+  position: unset;
+  width: 100%;
 }
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -269,4 +289,10 @@ p, body {
    background-color: #FFFFFF; /* Black */
    overflow-x: hidden; /* Disable horizontal scroll */
    padding-top: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .position-fixed {
+    position: unset !important;
+  }
 }
