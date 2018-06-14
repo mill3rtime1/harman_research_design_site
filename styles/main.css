@@ -279,7 +279,7 @@ p, body {
 }
 
 #navbar {
-  margin-bottom: 5%;
+  margin-bottom: 1%;
 }
 
 
@@ -296,8 +296,44 @@ p, body {
    padding-top: 20px;
 }
 
-@media screen and (max-width: 992px) {
+.inner-row {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+@media screen and (max-width: 576px) {
   .position-fixed {
     position: unset !important;
+  }
+  .container {
+    width: 90% !important;
+  }
+  .inner-row {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .inner-row-push {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .position-fixed {
+    position: unset !important;
+  }
+  .inner-row-push {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (min-width: 769px) and  (max-width: 992px) {
+  .position-fixed {
+    position: unset !important;
+  }
+  .inner-row-push {
+    padding-right: 0px;
+    padding-left: 0px;
   }
 }
