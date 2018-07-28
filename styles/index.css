@@ -99,6 +99,18 @@ h2 {
   max-width: 90%;
 }
 
+/* Sepia */
+.hover09 img {
+  -webkit-filter: sepia(30%);
+  filter: sepia(30%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.hover09:hover img {
+  -webkit-filter: sepia(0);
+  filter: sepia(0);
+}
+
 @media screen and (min-width: 768px) {
   .display-3 {
     font-size: 3.25rem;
