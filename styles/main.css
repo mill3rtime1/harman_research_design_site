@@ -178,6 +178,10 @@ body {
   margin-right: auto;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 h1 {
   font-size: 36px;
   line-height: 42px;
