@@ -9,6 +9,23 @@
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Linking Javascripts -->
   <script
@@ -461,7 +478,7 @@
         Considering our research method choices, we decided to broadened the range of techniques used to explore the domain in order to attack the AV space from as many angles as possible. We cared about first trying to learn all we could about the domain from experts or those involved with AVs right now (such as owners of Tesla vehicles with autopilot or car salespeople). We also recognized the importance of constructing our own simulations to help us better elicit user emotions. This immediately resulted in our Wizard of Oz study (WoZ).
       </p>
     </div>
-    <a href="#top">Back to Top</a>
+    <!-- <a href="#top">Back to Top</a> -->
     <br/>
     <hr/>
     <div class="row inner-row" id="primary_research">
@@ -751,7 +768,7 @@
     </div>
   </div>
   <br/>
-  <a href="#research_preface">Back to Top</a>
+  <!-- <a href="#research_preface">Back to Top</a> -->
   <br/>
   <div class="row inner-row">
     <h3>Affinity Diagramming</h3>
@@ -876,18 +893,22 @@
       <img src="images/micro.png" class="img-fluid" alt="Responsive image">
       <figcaption class="figure-caption">Separated design for Binary.</figcaption>
     </figure>
-    <div class="light-grey" style="padding: 10px;">
+    <div class="light-grey col-lg-8 offset-lg-2 pad-20">
       <h4>
         User testing insights that helped inform this design:
-        <h3>
+      </h4>
+      <p>
         <ul>
           <li>The arrows for speed and lane made people think of reverse instead of slow down, and lane change or turn instead of in-lane adjustment.</li>
           <li>The visuals on the Realistic model made people think they just need to tap to complete actions.</li>
           <li>The physical ridges on the Abstract design were confusing and did not add any value.</li>
         </ul>
-        </h3>
-      </h4>
+      </p>
     </div>
+
+  </div>
+
+  <div class="row inner-row">
 
     <h5 style="padding-top: 15px">Design</h5>
     <p>
@@ -914,19 +935,22 @@
       <img src="images/micro.png" class="img-fluid" alt="Responsive image">
       <figcaption class="figure-caption">Hella Gifs.</figcaption>
     </figure>
-    <div class="light-grey" style="padding: 10px;">
+    <div class="light-grey col-lg-8 offset-lg-2 pad-20">
       <h4>
         User testing insights that helped inform this design:
-        <h3>
+      </h4>
+      <p>
         <ul>
           <li>Users liked and understood how to use the control better when there were separate sections for speed and lane adjustment, as opposed to a central control that could move in four directions.</li>
           <li>People still didn’t see why they needed to move their arm so much for binary.</li>
           <li>The physical egg made users think a protrusion would actually be on the touch screen control, instead of just responding in that same manner digitally.</li>
           <li>Users still wanted more information about the context of speed and lane adjustment maneuvers, and labels on the control.</li>
         </ul>
-        </h3>
-      </h4>
+      </p>
     </div>
+  </div>
+
+  <div class="row inner-row">
     <h5 style="padding-top: 15px">Design</h5>
     <p>
       From the previous iteration, we learned that we should stick with something resembling the Separated design instead of the Consolidated design because users understood it better.  We also made sure to reduce arm movement required for binary decisions, add more labels to the control, and tweak the language on the monitor to provide stronger feedback and more information to the user about the outcome of their hand actions.  We continued with one design that maintained the same structure as our Separated design which allowed users to adjust speed or lane position anywhere within the general area of the label (Center design), and experimented with another design that required pulling with broad strokes across specific activation zones, balancing intentionality with freedom from precise movement (Edge design).  We again had the same binary design for each, but tried a new visual way of representing the swipe affordance - making the nebulous shapes touch.
@@ -1006,20 +1030,22 @@
       <figcaption class="figure-caption">Hella Gifs of Designs.</figcaption>
     </figure>
 
-    <div class="light-grey" style="padding: 10px;">
+    <div class="light-grey col-lg-8 offset-lg-2 pad-20">
       <h4>
         User testing insights that helped inform this design:
-        <h3>
+      </h4>
+      <p>
         <ul>
           <li>The Center design was vastly more successful and understandable, allowing most users to perform the speed and lane adjustment maneuvers correctly without guidance.</li>
           <li>The binary design needs to be adjusted so that it does not look like an open input area, and still encourages the swipe motion.</li>
           <li>In-lane adjustment visual for the secondary screen needs to be altered so it does not reflect space being created on the side one is moving towards.</li>
           <li>Any complete shape looks like a button.</li>
         </ul>
-        </h3>
-      </h4>
+      </p>
     </div>
+  </div>
 
+  <div class="row inner-row">
     <h5 style="padding-top: 15px">Design</h5>
     <p>
       In the New Center design, the speed and lane adjust screens were kept the same as they were in the Center design previously as it was largely successful.  The binary screen was changed to have a new kind of visual affordance and feedback reminiscent of blinds, eliminating the dark center area and labeling the two options on the control itself.  A “wave and fill” metaphor was leveraged for the new speed display on the secondary screen, showing target speed being set and the progress toward that target speed.  In-lane adjustment was also altered, placing a car icon on a string that resembled the wave from the speed screen, stretching to the left or right direction instead of trying to show arrows or shapes to the side of the vehicle (this was to minimize the impression that space was being created on that side of the car).  Finally, the binary display on the secondary screen also used the “wave and fill” motif to reflect the visuals on the control for binary, and to show the progress of confirmation.
@@ -1079,10 +1105,12 @@
       </ul>
     </p>
   </div>
+  <div class="row inner-row">
+    <a href="#top">Back to Top</a>
+  </div>
+  </div>
 
   </div>
-  </div>
-  <a href="#top">Back to Top</a>
 </div>
 </body>
 <footer class="footer">

@@ -314,6 +314,10 @@ p, body {
   padding-bottom: 10px;
 }
 
+.pad-20 {
+  padding: 20px;
+}
+
 @media screen and (max-width: 576px) {
   .position-fixed {
     position: unset !important;
