@@ -2,6 +2,7 @@
   /* Defining Global color choices */
   --black: #000000;
   --grey: #464646;
+  --light-grey: #EEEEEE;
   --red: #900000;
 };
 
@@ -63,6 +64,10 @@ a.active {
 
 .grey {
   background-color: var(--grey);
+}
+
+.light-grey {
+  background-color: var(--light-grey);
 }
 
 a.active.white-text {

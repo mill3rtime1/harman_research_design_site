@@ -835,7 +835,249 @@
   </div>
   <div class="row inner-row">
     <h3>Realistic and Abstract Designs | 5 Craigslist Recruits with Driving Experience</h3>
-  </div> 
+    <figure class="figure">
+      <img src="images/micro.png" class="img-fluid" alt="Responsive image">
+      <figcaption class="figure-caption">Realistic Model.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="images/micro.png" class="img-fluid" alt="Responsive image">
+      <figcaption class="figure-caption">Abstract model for speed/adjust in-lane (left) and binary (right).</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="images/micro.png" class="img-fluid" alt="Responsive image">
+      <figcaption class="figure-caption">Secondary screen image for decreasing speed.</figcaption>
+    </figure>
+    <h5>Design</h5>
+    <p>
+      These two designs were created to test if a more literal, realistic representation of the car’s movements was more appropriate for the control, or if people would understand and respond to a more abstract, joystick-like control.  In the Realistic design, there’s a distinct area for speed in the upper portion, and an area of lateral in-lane adjustment in the lower area, both of which require a swiping motion along the relevant axis of the control.  In the Abstract design, we had a squishable egg and ridges in cardinal directions around it to encourage the user to squish the object left or right for in-lane adjustment, or up and down for speed adjustment.  The idea was not there there would be an actual 3D object on the control, but that the digital version would have a shape that reacted in the same manner as the egg when touched.  These two designs were accompanied by a secondary screen showing feedback on what action they were performing, and representing that action with icons and minimal labels.
+    </p>
+    <h5>Protocol</h5>
+    <p>
+      Users were asked how they think they can interact with the control (affordances); how they would change their speed, lane position, and make a binary confirmation after being prompted by the secondary screen; and then provide feedback on the interactions that we had in mind.  This was done for both the Realistic and Abstract designs with each user.  These questions were administered while users sat in front of a driving simulator - see <a href="#testing_environment">Testing Environment</a> for more details on the simulator set-up.  At the end of each session, the user was also asked to rate their hand and arm comfort using the S shape compared to a flat shape.
+    </p>
+    <h5>Findings</h5>
+    <ul>
+      <li>All users thought the binary decision was confirmed by tapping the circle instead of sliding (before we explained our design intentions)</li>
+      <li>4/5 maintained that they preferred to press a button instead of slide for binary (after explanation)</li>
+      <li>4/5 liked the S shape better than the flat shape</li>
+      <li>3/5 thought speed area might be forward and reverse, and were confused about lane change or turning for the lateral area (before explanation)</li>
+      <li>3/5 wanted more information in general about speed and in-lane adjustment</li>
+    </ul>
+  </div>
+
+  <div class="row inner-row">
+    <h3>Separated and Consolidated Designs | 9 Craigslist recruits with driving experience</h3>
+    <figure class="figure">
+      <img src="images/micro.png" class="img-fluid" alt="Responsive image">
+      <figcaption class="figure-caption">Separated design for speed and in-lane adjustment.</figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="images/micro.png" class="img-fluid" alt="Responsive image">
+      <figcaption class="figure-caption">Separated design for Binary.</figcaption>
+    </figure>
+    <div class="light-grey" style="padding: 10px;">
+      <h4>
+        User testing insights that helped inform this design:
+        <h3>
+        <ul>
+          <li>The arrows for speed and lane made people think of reverse instead of slow down, and lane change or turn instead of in-lane adjustment.</li>
+          <li>The visuals on the Realistic model made people think they just need to tap to complete actions.</li>
+          <li>The physical ridges on the Abstract design were confusing and did not add any value.</li>
+        </ul>
+        </h3>
+      </h4>
+    </div>
+
+    <h5 style="padding-top: 15px">Design</h5>
+    <p>
+      In this iteration, we kept the same concepts from the previous Realistic and Abstract tests, but changed the visuals and abandoned the physical ridges in the Abstract design.  The team experimented with a less literal visual representation for both designs to focus on whether users responded better to a control layout with separate sections for speed and in-lane adjustment (Separated design), or a more centralized, joystick-like control (Consolidated design), without the factor of easier identification of the Realistic design functions in the previous iteration.  We also updated the visuals for the secondary screens, maintaining the same concepts that we hadn’t received sufficient feedback on yet.
+    </p>
+    <h5>Protocol</h5>
+    <p>
+      We had users complete the same actions as the last iteration in the same simulator environment.  This entailed asking about affordances; having them adjust speed, change lane position, and confirm a binary decision; and ending with asking about the S curve vs. a flat screen.
+    </p>
+    <ul>
+      <li>8/9 knew what to do for the Consolidated design after being shown how to properly complete the Separated design</li>
+      <li>6/9 questioned the necessity of the long arm movement for binary</li>
+      <li>6/9 thought pressing on the egg in the center of the Consolidated design would do something</li>
+      <li>6/9 liked and understood the Separated design better</li>
+      <li>5/9 wanted more information in general about feedback and system status</li>
+      <li>5/9 pressed the circle in the Separated design instead of swipe (before direction)</li>
+    </ul>
+  </div>
+
+  <div class="row inner-row" id="digital_ut">
+    <h2>Digital Interaction User Testing</h2>
+    <h3>Edge and Center Designs | 7 Craigslist recruits with driving experience</h3>
+    <figure class="figure">
+      <img src="images/micro.png" class="img-fluid" alt="Responsive image">
+      <figcaption class="figure-caption">Hella Gifs.</figcaption>
+    </figure>
+    <div class="light-grey" style="padding: 10px;">
+      <h4>
+        User testing insights that helped inform this design:
+        <h3>
+        <ul>
+          <li>Users liked and understood how to use the control better when there were separate sections for speed and lane adjustment, as opposed to a central control that could move in four directions.</li>
+          <li>People still didn’t see why they needed to move their arm so much for binary.</li>
+          <li>The physical egg made users think a protrusion would actually be on the touch screen control, instead of just responding in that same manner digitally.</li>
+          <li>Users still wanted more information about the context of speed and lane adjustment maneuvers, and labels on the control.</li>
+        </ul>
+        </h3>
+      </h4>
+    </div>
+    <h5>Design</h5>
+    <p>
+      From the previous iteration, we learned that we should stick with something resembling the Separated design instead of the Consolidated design because users understood it better.  We also made sure to reduce arm movement required for binary decisions, add more labels to the control, and tweak the language on the monitor to provide stronger feedback and more information to the user about the outcome of their hand actions.  We continued with one design that maintained the same structure as our Separated design which allowed users to adjust speed or lane position anywhere within the general area of the label (Center design), and experimented with another design that required pulling with broad strokes across specific activation zones, balancing intentionality with freedom from precise movement (Edge design).  We again had the same binary design for each, but tried a new visual way of representing the swipe affordance - making the nebulous shapes touch.
+    </p>
+    <h5>Protocol Tech</h5>
+    <p>
+      For this set of designs, we began testing them digitally on a flat iPad in our simulation set-up.  We also created animations that reflected the user’s touch, and showed confirmation on the control that the user had confirmed a binary decision.
+    </p>
+    <h5>Protocol Questions</h5>
+    <p>
+      Users were again asked the same types of questions from previous protocols, but were also specifically asked what they thought of the secondary screen, and also if this way of controlling the autonomous vehicle was better than taking over completely (manual driving).  Also, half of the participants were shown the Edge design first, and half shown the Center design first, to eliminate any effects of knowing how to do one before exposure to the other.  Finally, users were also shown an alternate set of secondary visuals at the very end of the test for their open input and comparison to the previous design.
+    </p>
+    <h5>Findings</h5>
+  </div>
+
+  <div class="row inner-row">
+    <p>
+      Edge Design:
+    </p>
+  </div>
+  
+  <div class="row inner-row">    
+    <ul>
+      <li>Users unanimously did not understand the pulling strokes from the edges of the control</li>
+      <li>6/7 did not understand “lane adjust” as moving within a lane, as opposed to between lanes</li>
+      <li>4/7 tapped the bumpers instead of pulling on them</li>
+    </ul>
+  </div>
+  
+  <div class="row inner-row">
+    <p>
+      Center Design:
+    </p>
+    <ul>
+      <li>Users unanimously preferred the Center design to the Edge design</li>
+      <li>Users unanimously performed the intended interaction for speed, regardless of which design they were shown first</li>
+      <li>Users unanimously understood swiping left/right to adjust in-lane (aside from confusion about the meaning of “lane adjust” on the control)</li>
+      <li>3/7 thought the bars indicated the number of fingers required for the interaction</li>
+      <li>3/7 appreciated fewer options on the screen</li>
+    </ul>
+
+    <p>
+      Binary Decision:
+    </p>
+    <ul>
+      <li>6/7 thought tapping the bottom shape would confirm the prompt</li>
+      <li>4/7 thought the open black space was an input area for tapping or tracing a path</li>
+      <li>3/7 wanted to confirm the prompt by completing an action incorporating the direction of the turn (like confirming a right turn on red by tracing a right turn path in the black area)</li>
+    </ul>
+
+    <p>
+      Secondary Monitor:
+    </p>
+    <ul>
+      <li>Users split between whether or not the car icon was helpful in the alternate screen design</li>
+      <li>Half of the users were confused about what the circular shapes for the in-lane adjustment screen meant (some thought they indicated movement, or speed, or space creation on that side)</li>
+    </ul>
+
+    <p>
+      Miscellaneous and Broader Insights:
+    </p>
+    <ul>
+      <li>Consensus on our control being better than takeover</li>
+      <li>Users want to tap any complete shape that might be a button</li>
+      <li>Those who want a more minimal design understand the control and its use, while those that ask for more detailed information seem to need more clarification on the value of the control</li>
+      <li>Understanding the translation of hand/arm movement to car movement is linked to how a user perceived the car in its environment</li>
+      <ul>
+        <li>If someone perceives the car as an object in space, they understand what is happening better and more easily</li>
+        <li>If someone is looking at the control as a means of steering a mechanical object, it is more difficult for them to understand how to use the control</li>
+      </ul>
+    </ul>
+  </div>
+  <div class="row inner-row">
+    <h3>New Center Design | 7 Tesla Autopilot users, 7 Craigslist recruits with (regular) driving experience</h3>
+    <figure class="figure">
+      <img src="images/micro.png" class="img-fluid" alt="Responsive image">
+      <figcaption class="figure-caption">Hella Gifs of Designs.</figcaption>
+    </figure>
+
+    <div class="light-grey" style="padding: 10px;">
+      <h4>
+        User testing insights that helped inform this design:
+        <h3>
+        <ul>
+          <li>The Center design was vastly more successful and understandable, allowing most users to perform the speed and lane adjustment maneuvers correctly without guidance.</li>
+          <li>The binary design needs to be adjusted so that it does not look like an open input area, and still encourages the swipe motion.</li>
+          <li>In-lane adjustment visual for the secondary screen needs to be altered so it does not reflect space being created on the side one is moving towards.</li>
+          <li>Any complete shape looks like a button.</li>
+        </ul>
+        </h3>
+      </h4>
+    </div>
+
+    <h5 style="padding-top: 15px">Design</h5>
+    <p>
+      In the New Center design, the speed and lane adjust screens were kept the same as they were in the Center design previously as it was largely successful.  The binary screen was changed to have a new kind of visual affordance and feedback reminiscent of blinds, eliminating the dark center area and labeling the two options on the control itself.  A “wave and fill” metaphor was leveraged for the new speed display on the secondary screen, showing target speed being set and the progress toward that target speed.  In-lane adjustment was also altered, placing a car icon on a string that resembled the wave from the speed screen, stretching to the left or right direction instead of trying to show arrows or shapes to the side of the vehicle (this was to minimize the impression that space was being created on that side of the car).  Finally, the binary display on the secondary screen also used the “wave and fill” motif to reflect the visuals on the control for binary, and to show the progress of confirmation.
+    </p>
+
+    <h5>Protocol Tech</h5>
+    <p>
+      For this iteration, we put together a system for testing our digital designs on an interactive curved surface instead of a flat tablet.  This involved a plexiglass curve on top of a projector with an attached infrared camera to track user hand movements through the plexiglass, triggering feedback on the screen and changes in the secondary screen and simulator (such as having the simulator increase in speed as the user swipes up on the control).  See [Testing Environment] for more details on the testing apparatus and simulation set-up.
+    </p>
+
+    <h5>Protocol Questions</h5>
+    <p>
+      In the protocol, users were asked to complete the same tasks as recent iterations (affordances, speed, in-lane adjustment, a binary decision, their input on the secondary screen, and thoughts on our intended interaction patterns).  However, in this test, the binary decision was changed from a right on red to passing a bus in order to learn more about user impressions of a different binary situation.  Also, we added extra questions at the end to get some broader input about the concept, including questions about other use cases they would like addressed, and questions for Tesla drivers about when they’ve taken over from Tesla Autopilot before and how our control compares to the controls available to them in their vehicle now.
+    </p>
+
+    <h5>Findings</h5>
+  </div>
+  <div class="row inner-row">
+    <p>
+      Speed
+      <ul>
+        <li>All users except one performed the expected interaction for speed</li>
+        <li>10/14 users expected speed to begin changing as soon as they started moving their hand on the speed portion of the control</li>
+        <li>About half of users understood the meaning and value of the “wave and fill” graphic on the speed display on the secondary screen</li>
+      </ul>
+    </p>
+    <p>
+      In-lane Adjustment:
+      <ul>
+        <li>About half of users understood that the lane adjustment was about moving within a lane, not between lanes</li>
+        <li>“Nudge in lane” was seen as appropriate but some but odd by many - it became clear that it should be changed to “Adjust in Lane” on the control and screen</li>
+        <li>A few users tried to move side to side in the speed area of the control instead of the bottom area</li>
+        <li>6 Tesla drivers and 2 other users wanted more information about the real-life road conditions in the lane adjustment secondary screen (we suspect this has to do with the way Tesla expresses surroundings in their dashboard)</li>
+      </ul>
+    </p>
+
+    <p>
+      Binary:
+  </div>
+  <div class="row inner-row">
+      <br/>
+      <ul>
+        <li>About half of users voiced and appreciated the benefits of the binary swipe instead of a button press</li>
+        <li>Half of users tried to tap the word to confirm instead of swipe</li>
+        <li>A few users swiped up on the control without guidance</li>
+        <li>“Hang back” was soon as too casual or ambiguous by most - will change to “Dismiss”</li>
+      </ul>
+    </p>
+  </div>
+  <div class="row inner-row">
+    <p>
+      Miscellaneous:
+      <ul>
+        <li>9/14 mentioned wanting an emergency stop function (3 Tesla drivers, 6 other users)</li>
+        <li>A few users felt the secondary screen was too far to the right in their field of vision (location in instrument cluster or heads-up display would be better)</li>
+        <li>A few users mentioned that having the same motion for speeding up and confirming binary actions was a good thing</li>
+      </ul>
+    </p>
+  </div>
 
   </div>
   </div>
