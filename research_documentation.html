@@ -63,7 +63,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="research.html">EXPLORATORY</a>
-                <a class="dropdown-item" href="user_research.html">USER RESEARCH</a>
+                <a class="dropdown-item" href="user_research.html">TESTING ENVIRONMENT</a>
                 <a class="dropdown-item active" href="research_documentation.html">FULL DOCUMENTATION</a>
               </div>
             </li>
@@ -824,17 +824,21 @@
     <h3>Form Testing | 6 MHCI Students</h3>
     <!-- Below image is a placeholder -->
     <figure class="figure">
-      <img src="images/micro.png" class="img-fluid" alt="Responsive image">
+      <img src="images/all_curves.png" class="img-fluid" alt="Responsive image mx-auto d-block">
       <figcaption class="figure-caption">All eight forms tested.</figcaption>
     </figure>
-    <figure class="figure">
-      <img src="images/micro.png" class="img-fluid" alt="Responsive image">
-      <figcaption class="figure-caption">Example of S shape, with curves on top and bottom.</figcaption>
-    </figure>
-    <figure class="figure">
-      <img src="images/micro.png" class="img-fluid" alt="Responsive image">
-      <figcaption class="figure-caption">Example of J shape, with curve on bottom only.</figcaption>
-    </figure>
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/cardboard_s.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Example of S shape, with curves on top and bottom.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/cardboard_j.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Example of J shape, with curve on bottom only.</figcaption>
+      </figure>
+    </div>
     <h5>Protocol</h5>
     <p>
       Users were asked to discuss and rank their comfort and confidence using different shapes and sizes of physical controls for the use cases of speed, lane position adjustment, and two types of go/don’t go decisions (right on red and unprotected left).  Some were shown a subset emphasizing difference in shape and severity of curve, some were shown a subset emphasizing size, and some were shown all of them.  This test and all the following conducted for the remainder of the project was prefaced with an introduction to set the context for the user.  This stated that they were in a semi-autonomous vehicle, defined what that meant in terms of car options available and expected user responsibilities, and told them our control was a touch interface for expressing preferences to the car during autonomous driving mode.
@@ -853,18 +857,27 @@
   </div>
   <div class="row inner-row">
     <h3>Realistic and Abstract Designs | 5 Craigslist Recruits with Driving Experience</h3>
-    <figure class="figure">
-      <img src="images/micro.png" class="img-fluid" alt="Responsive image">
-      <figcaption class="figure-caption">Realistic Model.</figcaption>
-    </figure>
-    <figure class="figure">
-      <img src="images/micro.png" class="img-fluid" alt="Responsive image">
-      <figcaption class="figure-caption">Abstract model for speed/adjust in-lane (left) and binary (right).</figcaption>
-    </figure>
-    <figure class="figure">
-      <img src="images/micro.png" class="img-fluid" alt="Responsive image">
-      <figcaption class="figure-caption">Secondary screen image for decreasing speed.</figcaption>
-    </figure>
+    <div class="col-lg-4">
+      <figure class="figure">
+        <img src="images/paper_real.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Realistic Model.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-8">
+      <figure class="figure">
+        <img src="images/egg.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Abstract model for speed/adjust in-lane (left) and binary (right).</figcaption>
+      </figure>
+    </div>
+
+    <div class="col-lg-8 mx-auto d-block">
+      <figure class="figure">
+        <img src="images/paper_ss.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Secondary screen image for decreasing speed.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="row inner-row">
     <h5>Design</h5>
     <p>
       These two designs were created to test if a more literal, realistic representation of the car’s movements was more appropriate for the control, or if people would understand and respond to a more abstract, joystick-like control.  In the Realistic design, there’s a distinct area for speed in the upper portion, and an area of lateral in-lane adjustment in the lower area, both of which require a swiping motion along the relevant axis of the control.  In the Abstract design, we had a squishable egg and ridges in cardinal directions around it to encourage the user to squish the object left or right for in-lane adjustment, or up and down for speed adjustment.  The idea was not there there would be an actual 3D object on the control, but that the digital version would have a shape that reacted in the same manner as the egg when touched.  These two designs were accompanied by a secondary screen showing feedback on what action they were performing, and representing that action with icons and minimal labels.
@@ -885,14 +898,69 @@
 
   <div class="row inner-row">
     <h3>Separated and Consolidated Designs | 9 Craigslist recruits with driving experience</h3>
-    <figure class="figure">
-      <img src="images/micro.png" class="img-fluid" alt="Responsive image">
-      <figcaption class="figure-caption">Separated design for speed and in-lane adjustment.</figcaption>
-    </figure>
-    <figure class="figure">
-      <img src="images/micro.png" class="img-fluid" alt="Responsive image">
-      <figcaption class="figure-caption">Separated design for Binary.</figcaption>
-    </figure>
+  </div>
+
+  <div class="row inner-row">
+    <h6>Control Designs</h6>
+  </div>
+
+  <div class="row inner-row">
+    <div class="col-lg-3">
+      <figure class="figure">
+        <img src="images/paper_disc.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Separated design for speed and in-lane adjustment.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-3">
+      <figure class="figure">
+        <img src="images/paper_disc_bin.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Separated design for Binary.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-3">
+      <figure class="figure">
+        <img src="images/paper_cont.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Integrated design for speed and in-lane adjustment.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-3">
+      <figure class="figure">
+        <img src="images/paper_egg_bin.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Integrated design for binary.</figcaption>
+      </figure>
+    </div>
+
+  </div>
+  <div class="row inner-row">
+    <h6>Secondary Screen Designs</h6>
+  </div>
+
+  <div class="row inner-row">
+
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/ss_1_decel.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Slowing Down.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/ss_1_accel.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Speeding Up.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/ss_1_left.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Shifting Left.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/ss_1_right.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Turning Right.</figcaption>
+      </figure>
+    </div>
     <div class="light-grey col-lg-8 offset-lg-2 pad-20">
       <h4>
         User testing insights that helped inform this design:
@@ -931,10 +999,50 @@
   <div class="row inner-row" id="digital_ut">
     <h2>Digital Interaction User Testing</h2>
     <h3>Edge and Center Designs | 7 Craigslist recruits with driving experience</h3>
-    <figure class="figure">
-      <img src="images/micro.png" class="img-fluid" alt="Responsive image">
-      <figcaption class="figure-caption">Hella Gifs.</figcaption>
-    </figure>
+  </div>
+  <div class="row inner-row">
+    <h6>Control Designs</h6>
+  </div>
+  <div class="row inner-row">
+    <div class="col-lg-4">
+      <figure class="figure">
+        <img src="images/edge.gif" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Edge Design.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-4">
+      <figure class="figure">
+        <img src="images/center.gif" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Center Design.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-4">
+      <figure class="figure">
+        <img src="images/binary_1.gif" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Binary Decision Design.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="row inner-row">
+    <h6>Secondary Screen Designs</h6>
+  </div>
+  <div class="row inner-row">
+    <div class="col-lg-12">
+      <figure class="figure">
+        <img src="images/minimal.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Minimal Secondary Screen Design.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="row inner-row">
+    <div class="col-lg-12">
+      <figure class="figure">
+        <img src="images/separation.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Separation Secondary Screen Design.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="row inner-row">
     <div class="light-grey col-lg-8 offset-lg-2 pad-20">
       <h4>
         User testing insights that helped inform this design:
@@ -1025,11 +1133,59 @@
   </div>
   <div class="row inner-row">
     <h3>New Center Design | 7 Tesla Autopilot users, 7 Craigslist recruits with (regular) driving experience</h3>
-    <figure class="figure">
-      <img src="images/micro.png" class="img-fluid" alt="Responsive image">
-      <figcaption class="figure-caption">Hella Gifs of Designs.</figcaption>
-    </figure>
+  </div>
+  <div class="row inner-row">
+    <h6>Control Designs</h6>
+  </div>
+  <div class="row inner-row">
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/continuous.gif" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Speed and Nudge in Lane Interface.</figcaption>
+      </figure>
+    </div>
 
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/binary.gif" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Binary Interface.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="row inner-row">
+    <h6>Secondary Screen Designs</h6>
+  </div>
+  <div class="row inner-row">
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/accel.gif" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Acceleration.</figcaption>
+      </figure>
+    </div>
+
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/decel.gif" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Deceleration.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="row inner-row">
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/accel.gif" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Lane Position.</figcaption>
+      </figure>
+    </div>
+
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/decel.gif" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Binary Decision.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="row inner-row">
     <div class="light-grey col-lg-8 offset-lg-2 pad-20">
       <h4>
         User testing insights that helped inform this design:

@@ -318,6 +318,10 @@ p, body {
   padding: 20px;
 }
 
+li strong {
+  font-size: medium;
+}
+
 @media screen and (max-width: 576px) {
   .position-fixed {
     position: unset !important;

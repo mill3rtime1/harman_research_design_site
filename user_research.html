@@ -63,7 +63,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="research.html">EXPLORATORY</a>
-                <a class="dropdown-item active" href="user_research.html">USER RESEARCH</a>
+                <a class="dropdown-item active" href="user_research.html">TESTING ENVIRONMENT</a>
                 <a class="dropdown-item" href="research_documentation.html">FULL DOCUMENTATION</a>
               </div>
             </li>
@@ -88,14 +88,90 @@
 
       <div class="position-fixed">
         <div class="col-lg-7">
-        <h1 class="uppercase">User Research</h1>
-        <p></p>
+        <h1 class="uppercase">Testing Environment</h1>
+        <p>The Testing Apparatus</p>
       </div>
       </div>
 
       <div class="col-lg-3"></div>
 
       <div class="col-lg-9">
+        <figure class="figure">
+          <img src="images/paper_ss.png" class="img-fluid" alt="Responsive image">
+          <figcaption class="figure-caption">Placeholder for Box Diagram.</figcaption>
+        </figure>
+        <div class="row inner-row">
+          <h4>What We Built</h4>
+        </div>
+        <div class="row inner-row">
+          <p>Our user tests all took place in a simulated driving environment that recreated the visual stimuli and ergonomic positioning of being in a semi-autonomous vehicle.</p>
+
+          <p>A scaffolding structure supports 3 monitors positioned to create a panoramic view. The structure also forms the center console on which our curved screen prototype was placed. Non-functional steering wheel and pedals provided users with the sense of being in a level 2-4 vehicle. In a semi autonomous driving context, such controls are still a necessity -- as the driver still requires the option of initiating a full manual takeover of the vehicle.</p>
+        </div>
+        <div class="row inner-row">
+          <h4>Why We Built a Simulator</h4>
+        </div>
+        <div class="row inner-row">
+          <p>The testing environment replicated the same demands and constraints present when supervising a moving vehicle. Thus the drivers cognition and attention is divided between the tasks of our control and the task of supervision. The simulated surroundings – other cars, pedestrians, traffic signals and stop signs – all demand attention from the user indepent from the tasks of using our control prototype. In addition, the setup enabled users to provide feedback regarding the level of physical comfort of using the control while also being positioning to properly to supervise the vehicle.</p>
+        </div>
+        <div class="row inner-row">
+          <h4>How We Used It</h4>
+        </div>
+        <div class="row inner-row">
+          <p>While participants of usability studies devoted attention to their simulated surroundings, they were also asked to complete a number of tasks using our control prototype. As the prototype’s fidelity increased, the fidelity of the prototype progressed through two distinct phases.</p>
+          <ul>
+            <li>Printed mock ups of interface iterations velcroed to curved surfaces constructed of cardboard. As the participant interacted with the paper prototype, a member of the Harman team would use an Xbox controller to manipulate the behavior of the vehicle in the simulator accordingly.</li>
+            <li> An interactive Framer prototype was presented to the user first on an iPad, and later in the project projected onto a curved surface. As the user interacted with the Framer prototype, it sent commands to the driving simulator, allowing the user to directly control the vehicle. While the user controlled the vehicle with the curved screen, the iPad was used to display feedback to the user that the action was underway by way of various animations.</li>
+          </ul>
+        </div>
+        <div class="row inner-row">
+          <h4>Underlying Technology</h4>
+        </div>
+        <div class="row inner-row">
+          <figure class="figure">
+            <img src="images/tech-build.png" class="img-fluid" alt="Responsive image">
+            <figcaption class="figure-caption">Our technical implementation.</figcaption>
+          </figure>
+          <h4>The Tools</h4>
+        </div>
+        <div class="row inner-row">
+          <ul>
+            <li> <strong> Framer </strong> Prototypes were created in Framer using assets imported from Sketch and animations and interactivity were written in coffeescript. The prototypes also contain a custom module we created to streamline making AJAX requests from within the coffescript code.
+            <li> <strong>CARLA Simulator </strong> <a href="carla.org" target="_blank">CARLA</a> is an open source driving simulator which can display onto up to 3 monitors or a projector and is capable of receiving remote network commands. CARLA is written in C.
+            </li>
+            <li><strong> Python Server </strong> A Python server acts as the link between all elements of the prototype, passing data back and forth. The Python Server ran from the main Windows PC.
+            <li><strong> iPad </strong> An iPad Pro serves as the secondary screen, displaying animations when triggered by user action.
+            </li>
+            <li><strong> Express Server </strong> The express server running on a Macbook pro connects the python server and the iPad.
+            <li><strong>Curved Plexiglass Screen</strong> A heat gun was used to bend plexiglass in order to form an S curved surface. Projection film was then adhered to the underside of the “screen”.
+            </li>
+            <li><strong>Short Throw Projector</strong> A projector capable of focusing an image from a short distance (roughly 2-3 feet) was pointed at the rear projector film on the curved screen, creating the effect of a curved screen.
+            </li>
+            <li><strong>Web Camera</strong> A camera placed next to the projector sees the users hand through the clear plexiglass screen and the projector film, which is semi opaque.
+            <li><strong>Glove</strong> a glove helps to normalize different hand colors and shapes for the software interpreting the hand tracking.
+            <li><strong>Community Core Vision</strong>  Open source software translated a video feed of the user’s hand into X/Y coordinates.
+            <li><strong>TUIO Driver</strong> The  <a href=”https://www.tuio.org/” target="_blank">TUIO</a> driver is based on the reacTIVision framework used for tracking multitouch gestures through computer vision. The driver translates the X,Y coordinates provided by Community Core Vision and the web camera into a mouse/cursor input that can be understood by a windows PC.
+            <li><strong>Main Windows PC</strong> A PC runs the CARLA driving simulator which it outputs to 3 monitors. It also outputs a video of the framer prototype to the short-throw projector (which is then displayed on the curved screen). The PC also runs the Python server. As framer is a Mac only program, it runs on a macbook pro and is displayed via a remote server on the main PC.
+            </ul>
+        </div>
+        <div class="row inner-row">
+          <h4>User Interaction Data Flow</h4>
+        </div>
+        <div class="row inner-row">
+          <ul>
+            <li>The user interacts with the framer prototype projected onto the curved surface by touching the surface.</li>
+            <li>The web camera picks up the shape of the hand.</li>
+            <li>The community core vision program is adjusted for light and visibility settings to convert the hand movements into X/Y coordinates.</li>
+            <li>The TUIO mouse driver takes the raw X/Y coordinates and maps them onto the window where the framer prototype is running on the Windows PC.</li>
+            <li>Framer receives the incoming mouse movements as if they are coming from a standard mouse output, and behaves as if a user is interacting directly. </li>
+            <li>The framer prototype has interaction triggers that send HTTP requests to a Python Server. The requests are only triggered travel distance of the interaction surpasses a defined threshold.</li>
+            <li>The Python server receives the the request, which would be a driving command such as speed up, and sends that command to the CARLA driving simulator.</li>
+            <li>The Python server receives the command to speed up, and determines if that is a safe driving action (i.e. is there another car in front of the vehicle). If it is safe the car in the simulator then speeds up. At this time the command is then sent right to CARLA.</li>
+            <li>When the Python server sends commands to CARLA, it also forwards that command to an Express server.</li>
+            <li>The Express server broadcasts the command through websockets to all subscribed clients, which in this case, is an iPad.</li>
+            <li>The iPad is running a framer prototype, and when it receives an event it is subscribed to from the Express server, it executes code that runs a corresponding animation.</li>
+          </ul>
+        </div>
         <a href="#top">Back to top</a>   
       </div>
 
