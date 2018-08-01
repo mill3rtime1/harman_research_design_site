@@ -108,9 +108,16 @@
           <p>
             The cooperative control introduced by our autonomous driving control paradigm supports the means of decision making with technology spearheaded by other innovations.
           </p>
-          <div class="image-holder">
-            <img src="images/flow.gif" class="img-fluid">
-          </div>
+        <div class="col-lg-6 mx-auto d-block">
+          <figure class="figure">
+            <img src="images/apple_iscreen.png" class="img-fluid" alt="Responsive image">
+          </figure>
+        </div>
+        <div class="col-lg-6 mx-auto d-block">
+          <figure class="figure">
+            <img src="images/ai.png" class="img-fluid" alt="Responsive image">
+          </figure>
+        </div>
           <p>
             The complete control system allows for a relationship between the human and the AI in a means that is more collaborative than the traditional master/slave relationships of past technologies. We chose to take what is known as a “loose reign” approach to controlling the autonomous vehicle, meaning the command the user sends to the car is filtered through the car’s own artificial intelligence and is acted upon only if the surrounding driving environment permits the action. This means if the human is trying to tell the car to speed up, but the car does not recognize its own position as being appropriate to speed up (such as being at a red light, or stuck in bumper-to-bumper-traffic) the car does not speed up. The car knows what is safe and will only fulfill the request of the human if it can continue to operate safely.
             <br/>
@@ -119,41 +126,55 @@
 
           </p>
 
-          <div class="image-holder">
-            <img src="images/flow.gif" class="img-fluid">
-          </div>
+        <div class="col-lg-12 mx-auto d-block">
+          <figure class="figure">
+            <img src="images/full_world_build.png" class="img-fluid" alt="Responsive image">
+            <figcaption class="figure-caption">Humans, AVs, and the surrounding environment.</figcaption>
+          </figure>
+        </div>
           <div>
             <h4>Interfaces</h4>
             <p>
               Our bottom interface for control is interactive, allowing for users to send various commands to the vehicle based on external driving context. Through our <a href="research.html">research</a>, we understood the need to allow personalization in the autonomous driving experience, through the use of several various use cases including speed control, adjustment of the vehicle within a lane, and general binary decision making (a go/don’t go decision).
             </p>
-
-            <p>
-              <strong>
-                Graphic: Interface GIF for Speed/Lane position
-              </strong>
-            </p>
-
+            <div class="col-lg-6 mx-auto d-block">
+              <figure class="figure">
+                <img src="images/continuous.gif" class="img-fluid" alt="Responsive image">
+                <figcaption class="figure-caption">Our interface for continuous speed and lane nudging control.</figcaption>
+              </figure>
+            </div>
             <p>
               For our speed and lane position interface, we recognized the need for users to have constant access to making these more continuous adjustments. We also understood the positional affordances of the four general cardinal directions and exposed them to provide affordances for controlling speed and positioning within a lane (or “lane nudging”).
             </p>
 
-            <p>
-              <strong>
-                Graphic: Interface GIF for Binary Decision
-              </strong>
-            </p>
+            <div class="col-lg-6 mx-auto d-block">
+              <figure class="figure">
+                <img src="images/binary.gif" class="img-fluid" alt="Responsive image">
+                <figcaption class="figure-caption">Our interface for binary, go/don't go decisions.</figcaption>
+              </figure>
+            </div>
 
             <p>
               Other driving factors, such as whether or not to make a right turn at a red light, are a bit more hazy, with opportunities presenting themselves but the personalization of the overall driving experience leaves these sorts of decisions undefined from the perspective of the AI. We call these binary decisions. We constructed an interface for these binary decisions that not only scales to meet the unpredictable nature of a drive, but ensures the user is making a calculated decision through a more dedicated “confirm” or “deny” action.
             </p>
-            <img src="images/micro.png" class="img-fluid">
             <h4>Curvature</h4>
+            <div class="col-lg-6 mx-auto d-block">
+              <figure class="figure">
+                <img src="images/curve_only.png" class="img-fluid" alt="Responsive image">
+                <figcaption class="figure-caption">Our curve affords a unique phenomena of control without the need to look down.</figcaption>
+              </figure>
+            </div>
             <p>
               The most unique aspect of the overall design is the curved input control sitting below. The curvature provides affordances as to hand and finger positioning which allow the user to make more informed decisions about where their hand position is and where they wish to move to without needing to look and place the hand on the desired point. 
             </p>
+            <img src="images/micro.png" class="img-fluid">
             <h4>Secondary Monitor</h4>
-            <!-- secondary monitor img to be added here -->
+            <div class="col-lg-6 mx-auto d-block">
+              <figure class="figure">
+                <img src="images/second_screen_only.png" class="img-fluid" alt="Responsive image">
+                <figcaption class="figure-caption">Our curve affords a unique phenomena of control without the need to look down.</figcaption>
+              </figure>
+            </div>
             <p>
               The need for visual feedback about controlling a car not being driven is critical. Being able to see whether or not the command requested by the human to the car was heard allows for better confidence in the autonomous driving experience. The monitor is synchronized with the curved input control to allow for real-time feedback on what alterations to the current drive can be made.
             </p>
