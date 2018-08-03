@@ -63,6 +63,7 @@
                 <a class="dropdown-item" href="research.html">EXPLORATORY</a>
                 <a class="dropdown-item" href="user_research.html">TESTING ENVIRONMENT</a>
                 <a class="dropdown-item" href="research_documentation.html">FULL DOCUMENTATION</a>
+                <a class="dropdown-item" href="tree.html">UNEXPLORED OPPORTUNITIES</a>
               </div>
             </li>
             <li class="nav-item active">
@@ -93,14 +94,18 @@
       <div class="col-lg-3"></div>
 
       <div class="col-lg-9">
-        <img src="images/SS2BC.png" class="img-fluid bottom cent-img">
-        <div class="row">
+        <div class="col-lg-9 mx-auto d-block">
+          <figure class="figure">
+            <img src="images/in_car.png" class="img-fluid" alt="Responsive image">
+          </figure>
+        </div>
+        <div class="row inner-row">
           <div class="col-sm-8">
             <p>Our unique interface provides a means for a human driver to interact with an AI which gives the driver a sense of control over a vehicle they are not directly driving. It provides unique affordances to help the human better understand how they can alter the performance of the car while the car is operating on its own, with multiple means of feedback. Most importantly, this complete interface for interacting with an autonomous vehicle pioneers new means of decision making between the vehicle and the human in a collaborative way.</p>
           </div>
           <div class="col-sm-4">
             <hr class="red"/>
-            <p>curved screen, secondary monitor, real world</p>
+            <p>A visualization of our interface in a vehicle</p>
           </div>
         </div>
         <div class="row inner-row">
@@ -132,7 +137,7 @@
             <figcaption class="figure-caption">Humans, AVs, and the surrounding environment.</figcaption>
           </figure>
         </div>
-          <div>
+          <div class="row inner-row">
             <h4>Interfaces</h4>
             <p>
               Our bottom interface for control is interactive, allowing for users to send various commands to the vehicle based on external driving context. Through our <a href="research.html">research</a>, we understood the need to allow personalization in the autonomous driving experience, through the use of several various use cases including speed control, adjustment of the vehicle within a lane, and general binary decision making (a go/don’t go decision).
@@ -141,7 +146,17 @@
               <figure class="figure">
                 <img src="images/continuous.gif" class="img-fluid" alt="Responsive image">
                 <figcaption class="figure-caption">Our interface for continuous speed and lane nudging control.</figcaption>
+              </figure>        
+            </div>
+            <div class="col-lg-6 mx-auto d-block">
+              <figure class="figure">
+                <img src="images/accel.gif" class="img-fluid" alt="Responsive image">
+                <figcaption class="figure-caption">Secondary Screen Feedback for acceleration.</figcaption>
               </figure>
+            </div>
+            <div class="col-lg-6 mx-auto d-block">
+                <iframe src="https://framer.cloud/dDBFW/" width="800" height="600" frameborder="0"/>
+              </iframe>
             </div>
             <p>
               For our speed and lane position interface, we recognized the need for users to have constant access to making these more continuous adjustments. We also understood the positional affordances of the four general cardinal directions and exposed them to provide affordances for controlling speed and positioning within a lane (or “lane nudging”).
@@ -149,11 +164,20 @@
 
             <div class="col-lg-6 mx-auto d-block">
               <figure class="figure">
-                <img src="images/binary.gif" class="img-fluid" alt="Responsive image">
+                <img src="images/binary_ui.gif" class="img-fluid" alt="Responsive image">
                 <figcaption class="figure-caption">Our interface for binary, go/don't go decisions.</figcaption>
               </figure>
             </div>
-
+            <div class="col-lg-6 mx-auto d-block">
+              <figure class="figure">
+                <img src="images/binary.gif" class="img-fluid" alt="Responsive image">
+                <figcaption class="figure-caption">Secondary Screen Feedback for Binary Decisions.</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6 mx-auto d-block">
+              <iframe src="https://framer.cloud/USLIa" width="800" height="600" frameborder="0"/>
+            </iframe>
+            </div>
             <p>
               Other driving factors, such as whether or not to make a right turn at a red light, are a bit more hazy, with opportunities presenting themselves but the personalization of the overall driving experience leaves these sorts of decisions undefined from the perspective of the AI. We call these binary decisions. We constructed an interface for these binary decisions that not only scales to meet the unpredictable nature of a drive, but ensures the user is making a calculated decision through a more dedicated “confirm” or “deny” action.
             </p>
@@ -167,7 +191,11 @@
             <p>
               The most unique aspect of the overall design is the curved input control sitting below. The curvature provides affordances as to hand and finger positioning which allow the user to make more informed decisions about where their hand position is and where they wish to move to without needing to look and place the hand on the desired point. 
             </p>
-            <img src="images/micro.png" class="img-fluid">
+            <div class="col-lg-12 mx-auto d-block">
+              <figure class="figure">
+                <img src="images/micro.png" class="img-fluid" alt="Responsive image">
+              </figure>
+            </div>
             <h4>Secondary Monitor</h4>
             <div class="col-lg-6 mx-auto d-block">
               <figure class="figure">

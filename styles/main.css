@@ -242,17 +242,17 @@ p, body {
 
 /* Place text in the middle of the image */
 .hero-text {
-    position: absolute;
+/*    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    transform: translate(-50%, -50%);*/
+    color: black;
 }
 
 /* Place text in the middle of the image */
 .low-text {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -290,7 +290,6 @@ p, body {
   margin-bottom: 1%;
 }
 
-
 .sidenav {
    margin-top: 4%;
    height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -312,6 +311,11 @@ p, body {
 .give-padding {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.give-high-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .pad-20 {
@@ -339,11 +343,11 @@ li strong {
   }
   /* Place text in the middle of the image */
   .low-text {
-      position: absolute;
-      top: 90%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
+      position: unset;
+      top: unset;
+      left: unset;
+      transform: unset;
+      color: unset;
   }
 }
 
@@ -355,6 +359,13 @@ li strong {
     padding-right: 15px;
     padding-left: 15px;
   }
+  .low-text {
+      position: unset;
+      top: unset;
+      left: unset;
+      transform: unset;
+      color: unset;
+  }
 }
 
 @media screen and (min-width: 769px) and  (max-width: 992px) {
@@ -364,5 +375,13 @@ li strong {
   .inner-row-push {
     padding-right: 0px;
     padding-left: 0px;
+  }
+
+  .low-text {
+      position: unset;
+      top: unset;
+      left: unset;
+      transform: unset;
+      color: unset;
   }
 }

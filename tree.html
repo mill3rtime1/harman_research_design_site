@@ -59,10 +59,11 @@
               <a class="nav-link dropdown-toggle" href="research.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 RESEARCH
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="research.html">EXPLORATORY</a>
                 <a class="dropdown-item" href="user_research.html">TESTING ENVIRONMENT</a>
                 <a class="dropdown-item" href="research_documentation.html">FULL DOCUMENTATION</a>
+                <a class="dropdown-item active" href="tree.html">UNEXPLORED OPPORTUNITIES</a>
               </div>
             </li>
             <li class="nav-item">
@@ -82,86 +83,474 @@
   </div>
 
   <div class="container animated fadeIn">
-    <h2>T R E E</h2>
     <div class="row">
-      <div class="col-lg-2 offset-lg-1 hover09">
-        <a href="#environment"><img src="images/scurve.png" class="img-thumbnail mx-auto d-block"></a>
+    <div class="position-fixed">
+        <div class="col-lg-5">
+          <h1 class="uppercase">Unexplored Opportunities</h1>
+          <p>Allowing a collaborative driving experience between humans and autonomous vehicles.</p>
+          <a href="#environment">Environment</a>
+          <br/>
+          <a href="#research">Research</a>
+          <br/>
+          <a href="#concepting">Concepting</a>
+          <br/>
+          <!-- <a href="#design_decisions">Design Decisions</a> -->
+          <br/>
+          <a href="#future">Future Roadmap</a>
+        </div>
       </div>
-      <div class="col-lg-2 hover09">
-        <a href="#section_2"><img src="images/scurve.png" class="img-thumbnail mx-auto d-block"></a>
+    <div class="col-lg-9 offset-lg-3">
+      <div class="row inner-row">
+        <div class="col-lg-12">
+          <h2>How to Use This</h2>
+          <p>This project was extremely exploratory, and throughout each phase we made research and design decisions (which can be seen in the full documentation) that took us on a parth towards a curved screen interface. However, along the way, there were options that were left behind. The below list is not inclusive of well-vetted and realized idea, but rather concepts that ended up did not end up being incorporated but are still worthy of exploration.</p>
+          <p> Please use this as a retrospective into unexplored opportunities, as well as a roadmap for the future.</p>
+        </div>
       </div>
-      <div class="col-lg-2 hover09">
-        <a href="#section_3"><img src="images/scurve.png" class="img-thumbnail mx-auto d-block"></a>
-      </div>
-      <div class="col-lg-2 hover09">
-        <a href="#section_4"><img src="images/scurve.png" class="img-thumbnail mx-auto d-block"></a>
-      </div>
-      <div class="col-lg-2 hover09">
-        <a href="#section_5"><img src="images/scurve.png" class="img-thumbnail mx-auto d-block"></a>
-      </div>
-    </div>
-    <div class="row" id="environment">
-      <h2>E N V I R O N M E N T</h2>
-      <div id="accordion">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Collapsible Group Item #1
-              </button>
-            </h5>
-          </div>
+      <div class="row inner-row give-high-padding" id="environment">
+        <div class="col-lg-12">
+        <h2>Environment</h2>
+          <div id="accordion" class="w-100">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link text-red" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Levels of Autonomy
+                  </button>
+                </h5>
+              </div>
 
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <p>We chose to focus on levels 3-4 of autonomy because it will be most people's first explosure to autonomy and opens up conversations about building trust between humans and autonomy.</p>
+
+                  <p>A rich area of additional exploration is the grey area of responsibility that can obscure knowing who has control over particular functions of the car. This is especially true with advanced ADAS features in which humans have more control over some features, but not others (such as having the AI control speed & tail distance, but not brake assist). This has the opportunity to create cognitive dissonance with a user's mental model of autonomy.</p>
+
+                  <p>Of course, exploring L5 autonomy can open up a wealth of opportunities with passenger interaction, but has a longer lead time for development and deployment.</p>
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Collapsible Group Item #2
-              </button>
-            </h5>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed text-red" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Timeline
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <p>The timeline for productization of this project is set at 3-5 years because of the contraints of creating a real product. We built our logic around technologies that would reach maturity around this timeframe as well as how ready and willing people's thinking and societal models would be.</p>
+
+                  <p>If the timeline were to be extended to 5+ years out, we could assume that autonomous technology to be more smoothed. With less issues and takeover, opening up the opportunity to focus on true user engagement without concentrating on a driver's ability to takeover operations of the vehicle.</p>
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Collapsible Group Item #3
-              </button>
-            </h5>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed text-red" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Ownership Models
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <p>From the begining, our project is heavily focused on private ownership models, with Harman selling our idea into production vehicles that would be in the hands of individual drivers. By switching the design and research constraint to a world of shared autonomy, many more options are opened up including:</p>
+                  <ul>
+                    <li>Designing autonomous white label vehicles for fleets that can be branded for rideshare and taxi companies instead of the OEM</li>
+                    <li>Customizeable interiors that pull preferences from in-phone app settings so the rider feels that they are in a personalized space every time</li>
+                    <li>Using rider-reported incidents to further tweek and curate the overall experience (likert scale ratings inside the car)</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row" id="section_2">
-      <h2>S E C T I O N 2</h2>
-    </div>
-    <div class="row" id="section_3">
-      <h2>S E C T I O N 3</h2>
-    </div>
-    <div class="row" id="section_4">
-      <h2>S E C T I O N 4</h2>
-    </div>
-    <div class="row" id="section_5">
-      <h2>S E C T I O N 5</h2>
+      <div class="row give-high-padding" id="research">
+        <div class="col-lg-12">
+          <h2>Research</h2>
+          <div id="accordion2" class="w-100">
+            <div class="card">
+              <div class="card-header" id="headingOne2">
+                <h5 class="mb-0">
+                  <button class="btn btn-link text-red" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                    Research Questions
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseOne2" class="collapse show" aria-labelledby="headingOne2" data-parent="#accordion2">
+                <div class="card-body">
+                  <p>With this context, we set out to create a list of questions to address, those in-scope can be <a href="research_documentation.html#questions">found here</a>.</p>
+
+                  <p>We also have a wealth of questions that we felt were out of scope and not feasible to pursue in our timeline and vision. The questions we left on the table include:</p>
+
+                  <ul>
+                    <li>What kind of environment do people expect in an L5 AV?</li>
+                    <li>What is the mental model closely associated with riding in an L5 AV?</li>
+                  </ul>
+
+                  <ul>
+                    <li>What is the difference of shared autonomy and public transit?</li>
+                    <li>How do public and private spaces in vehicles differ?</li>
+                    <li>Does engaging in secondary tasks while being driven cause car sickness?</li>
+                    <li>Why do people buy luxury cars? Why do people own vs lease cars?</li>
+                    <li>Does exterior styling matter in shared autonomy?</li>
+                  </ul>
+
+                  <ul>
+                    <li>What would people do with the ability to jailbreak their AV?</li>
+                    <li>Do human drivers think they're above the mean, and does impact their preference for control?</li>
+                    <li>Will "manual" driving be seen as a special hobby? will it be cheaper or more expensive?</li>
+                    <li>Will there be stunted driving ability in those with dependencies on autonomous features?</li>
+                  </ul>
+
+                  <ul>
+                    <li>How can AV's improve the world/society? Is there a pro-social aspect?</li>
+                    <li>What accessibility markets can AV's serve?</li>
+                    <li>Who are the under served populations that can benefit?</li>
+                  </ul>
+
+                  <ul>
+                    <li>What modality do people prefer when interacting with AVs (voice vs haptic vs traditional)?</li>
+                    <li>What are the weaknesses of current infotainment systems?</li>
+                    <li>How do mobile ecosystems change the way users perceive their experience?</li>
+                    <li>Why do people use Apple Carplay or Android Auto?</li>
+                  </ul>
+
+                  <ul>
+                    <li>What is the opportunity in next level entertainment?</li>
+                    <li>Why are backseat entertainment screens not that successful?</li>
+                    <li>How can we make a car ride interactive when not driving?</li>
+                  </ul>
+
+                  <ul>
+                    <li>Do people want to be entertained or engaged by a L5 AV, or left alone?</li>
+                    <li>Is it acceptable to gamify the road?</li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo2">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed text-red" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                    Research Subjects
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2" data-parent="#accordion2">
+                <div class="card-body">
+                  <p>
+                    Given the scoping of our project, we decided that the three types of people we needed to interview were Tesla Owners, Car Enthusiasts and Car Salespeople.
+                  </p>
+                  <p>
+                    <strong>Car sales people</strong> - what our target demographic/early adopters look for in vehicles, trends in what early adopters buy and why
+                  </p>
+                  <p>
+                    <strong>Operators of autonomous vehicles under testing</strong> - have experience with real autonomous driving, more than Tesla drivers, but issues with confidentiality and whatnot
+                  </p>
+                  <p>
+                    <strong>Pilots</strong> - found out late in the game that they would be beneficial to hear from, could you used the input of a couple more maybe?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree2">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed text-red" data-toggle="collapse" data-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                    Areas of Exploration
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree2" class="collapse" aria-labelledby="headingThree2" data-parent="#accordion2">
+                <div class="card-body">
+                  <p>Early on, we identified several Areas for Exploration, which were larger questions we would spend time looking into before narrowing on a solution to develop in the AV Domain.</p>
+                  <h3>
+                    Addressed:
+                  </h3>
+                    <strong>The Moments that Build Trust</strong>
+                  </p>
+                  <p>
+                    Users’ trust in the AV system increases based upon its performance in specific moments during the ride. What are these moments, and how can we facilitate them?
+                  </p>
+
+                  <p>
+                    <strong>Establishing Driver Agency</strong>
+                  </p>
+                  <p>
+                    Users need reassurance that they have control over the vehicle, even when it is in autonomous driving mode. How can we communicate that most effectively and make the user feel in control?
+                  </p>
+
+                  <h3>
+                    Unaddressed:
+                  </h3>
+
+                  <p>
+                    <strong>Learning my Driving Preferences and Incorporating Feedback</strong>
+                  </p>
+
+                  <p>
+                    Users want the AV to drive like they would. How can users convey their driving preferences to the AV during the drive, and how should the vehicle acknowledge and incorporate this feedback?
+                  </p>
+
+                  <p>
+                    <strong>Personalized Interior Experiences</strong>
+                  </p>
+                  <p>
+                    Users want the car to recognize their desires and remember their preferences. What specifically do users want or not want the car to do for them?
+                  </p>
+
+                  <p>
+                    <strong>What to Make Transparent to the Driver</strong>
+                  </p>
+                  <p>
+                    Users need the right amount of transparency into the workings of the AV system. What is necessary to show, what is too much, and how should this information be displayed?
+                  </p>
+
+                  <p>
+                    <strong>Enjoyable Control of Autonomous Driving</strong>
+                  </p>
+                  <p>
+                    Users derive joy from controlling their vehicles. How can this be retained in an AV system?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row give-high-padding" id="concepting">
+        <div class="col-lg-12">
+          <h2>Concepting</h2>
+          <div id="accordion3" class="w-100">
+            <div class="card">
+              <div class="card-header" id="headingOne3">
+                <h5 class="mb-0">
+                  <button class="btn btn-link text-red" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3">
+                    Creative Matrix Highlights
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseOne3" class="collapse show" aria-labelledby="headingOne3" data-parent="#accordion3">
+                <div class="card-body">
+                  <a href="https://docs.google.com/spreadsheets/d/1RWkFez9TQVtfC3AFD8x7nOllgxqHizCXsvuFUiGM5-c/edit#gid=308351477">Here is the raw matrix</a> from the March trip to Mountain View.
+                  <p>Themes:</p>
+                  <ul>
+                    <li>communication to pedestrians and other vehicles </li>
+                    <li>other ways to distinguish autopilot from manual driving mode/who's in control (collapsing steering wheel; different colors across dash or car for different mode)</li>
+                    <li>personalize what the user wants to see (CV, maneuver options, non-driving related like changing interior based on mood)</li>
+                    <li>NLP seamless interaction with vehicle (not really realistic though so maybe don't mention?)
+                      <ul>
+                        <li>AV understanding of natural language (makes a note for future driving when the person says ""whoa that was close""</li>
+                        <li>use voice to ask what's happening in surrounding environment, or to figure out why the car did something (more NLP)</li>
+                      </ul>
+                    </li>
+                    <li>windshield displays (of CV, prompts within CV) </li>
+                    <li>living room on wheels/office car    </li>
+                    <li>different ways for AV to get human's attention (tap on shoulder?)</li>
+                    <li>communication between AI and human when learning or teaching something about preferences (sounds, highlighting situation, rewards)</li>
+                    <li>methods of strategic distraction (games?)</li>
+                    <li>gesture detection for communication</li>
+                    <li>using biometrics to know when to present certain info to human (like show different amount of info when scared or when the AI needs to keep human awake)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+<!--             <div class="card">
+              <div class="card-header" id="headingTwo3">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
+                    Visioning
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo3" class="collapse" aria-labelledby="headingTwo3" data-parent="#accordion3">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree3">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                    Collapsible Group Item #3
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree3" class="collapse" aria-labelledby="headingThree3" data-parent="#accordion3">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+<!--       <div class="row give-high-padding" id="design_decisions">
+        <div class="col-lg-12">
+          <h2>Design Decisions</h2>
+          <div id="accordion4" class="w-100">
+            <div class="card">
+              <div class="card-header" id="headingOne4">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne4" aria-expanded="false" aria-controls="collapseOne4">
+                    Collapsible Group Item #1
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseOne4" class="collapse show" aria-labelledby="headingOne4" data-parent="#accordion4">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo4">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo4" aria-expanded="false" aria-controls="collapseTwo4">
+                    Collapsible Group Item #2
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo4" class="collapse" aria-labelledby="headingTwo4" data-parent="#accordion4">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree4">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
+                    Collapsible Group Item #3
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree4" class="collapse" aria-labelledby="headingThree4" data-parent="#accordion4">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="row give-high-padding" id="future">
+        <div class="col-lg-12">
+          <h2>Future Roadmap</h2>
+          <div id="accordion5" class="w-100">
+            <div class="card">
+              <div class="card-header" id="headingOne5">
+                <h5 class="mb-0">
+                  <button class="btn btn-link text-red" data-toggle="collapse" data-target="#collapseOne5" aria-expanded="false" aria-controls="collapseOne5">
+                    Physical Responsiveness
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseOne5" class="collapse show" aria-labelledby="headingOne5" data-parent="#accordion5">
+                <div class="card-body">
+                  <p>One of the key concepts of our product is the curved shape. The slope and unique S-curve shape allows users to know where their hand is physically on the control, and which control options are available.</p>
+
+                  <p>This creates a type of hybrid-tangibility; the physical curve of the screen acts as an affordance of interactions as well as having digital feedback of your actions. However, there are additional techniques that should be included in the next version that further foster these benefits:</p>
+
+                  <ul>
+                    <li>Haptic feedback to make thresholds and confirmations more salient, using vibrations as resistance, as well as notifying of the level of speed or lane shift that is happening</li>
+                    <li>Audio prompt notifications to avoid change</li>
+                    <li>Feedback tones for confirmation and understanding</li>
+                    <li>Static textures to create different zones and incorporating hand-feel as a signifier</li>
+                    <li>Refreshing textures and responsive glass to indicate zones of operations</li>
+                    <li>Adjustable mounting allowing users to move the screen for comfort</li>
+                    <li>Responsive slope: placing actuators behind the OLED screen to make the slope of the curve responsive and map to the speed. The steeper slope, the higher speed the car is moving, the harder it would be to speed up due to more friction when swiping up because less speed gain is available.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo5">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed text-red" data-toggle="collapse" data-target="#collapseTwo5" aria-expanded="false" aria-controls="collapseTwo5">
+                    Digital Sensemaking
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo5" class="collapse" aria-labelledby="headingTwo5" data-parent="#accordion5">
+                <div class="card-body">
+                  <p>
+                    Our research indicated that the amount of info shown to the user is vital. Too much information (showing a user a direct video stream of the car's computer vision) leaves people feeling even more overwhelmed and confused. Too little information, and the user doesn't know if the AI has enough situational awareness and understanding of the environment and world around it.
+                  </p>
+                  <p>
+                    Through testing we were able to uncover that it is vital to show that the AI sees a user's command (immediate action feedback) and that the car is then following through on that command and executing the intent. We also were able to see that some users wanted to have more specific information about the world around them, not just trusting that the car knows the boundaries of a lane or what options are available to execute in the form of a prompt.
+                  </p>
+                  <p>
+                    The AI also needs to explain to the user why it is not executing something. It is a level of visibility and transparency that may not quite available with existing technology, but it is vital to the success of the human-AI relationship.
+                  </p>
+                  <p>
+                    The limitations of our testing environment in terms of realism did not allow us to push the boundaries of how much or how little environmental information the user needs to see in order to feel safe both in giving contol over to the car and before making a decision.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree5">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed text-red" data-toggle="collapse" data-target="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
+                    Next Steps of Research
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree5" class="collapse" aria-labelledby="headingThree5" data-parent="#accordion5">
+                <div class="card-body">
+                  <p>We see the next steps in research happening after additional fidelity is gained in the design and placed inside the cabin of a real vehicle, either with a better calibrated rear projector or creating a prototype from a custom-bent OLED screen. This additional level of realism well better allow users to see themselves operating the vehicle through this control providing better data and feedback, leading to more specific design decisions.</p>
+
+                  <p>The amount of information a user would want to see will be impacted by the real world scenarios and real world uncomfortable situations (like actually being behind a large vehicle, or feeling the frustration of the AV not moving by itself).</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree5">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed text-red" data-toggle="collapse" data-target="#collapseFour5" aria-expanded="false" aria-controls="collapseFour5">
+                    Harman Technology Integration
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFour5" class="collapse" aria-labelledby="headingFour5" data-parent="#accordion5">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree5">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed text-red" data-toggle="collapse" data-target="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5">
+                    Future of AI + Human Relationship
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFive5" class="collapse" aria-labelledby="headingFive5" data-parent="#accordion5">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
   </div>
-
 </body>
 <footer class="footer">
   <div class="container text-center">

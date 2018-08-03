@@ -13,9 +13,17 @@ body, html {
     height: 100%;
 }
 
+.top-room {
+  margin-top: 10%;
+}
+
+.container {
+    height:auto;
+}
+
 .parallax { 
     /* The image used */
-  background-image: url('http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-169280.jpg');
+  background-image: url('../images/dash2.png');
 
     /* Full height */
     height: 100%;
@@ -23,9 +31,10 @@ body, html {
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
-    background-size: cover;
+    /*background-size: cover;*/
+    background-size: 100%;
 }
 
 .grey {
@@ -76,11 +85,11 @@ body, html {
   padding-bottom: 20px;
 }
 
-.display-3 {
+.display-4 {
   font-size: 2rem;
 }
 
-h2 {
+h3 {
   font-size: 18px;
   font-weight: 600;
   color: black;
@@ -111,12 +120,14 @@ h2 {
   filter: sepia(0);
 }
 
+
+
 @media screen and (min-width: 768px) {
-  .display-3 {
+  .display-4 {
     font-size: 3.25rem;
   }
 
-  h2 {
+  h3 {
     font-size: 18px;
   }
 
@@ -127,6 +138,26 @@ h2 {
   .mobile-push{
     padding-left: unset;
     padding-right: unset;
+  }
+
+  .parallax { 
+    /* The image used */
+    background-image: url('../images/dash2.png');
+
+      /* Full height */
+      height: 100%;
+      width: 100%; 
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: left;
+      background-repeat: no-repeat;
+      /*background-size: cover;*/
+      background-size: 50%;
+  }
+
+  .container {
+    height:auto;
   }
 }
 
@@ -152,11 +183,11 @@ h2 {
     margin-bottom: 30px;
   }
 
-  .display-3 {
+  .display-4 {
     font-size: 4.5rem;
   }
 
-  h2 {
+  h3 {
     font-size: 24px;
   }
 
@@ -166,6 +197,20 @@ h2 {
 
   .desktop-center {
     text-align: center !important;
+  }
+
+  .top-room {
+    margin-top: 10%;
+  }
+
+  .container {
+      height:70%;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .mobile-height-auto {
+    height: auto !important;
   }
 }
 
