@@ -4,10 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Linking CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Linking Javascripts -->
   <script
@@ -18,13 +36,15 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
   <script type="text/javascript" src="javascripts/main.js"></script>
+  <script src="javascripts/smooth-scroll.js"></script>
+
 
   <title>Harman MHCI Capstone</title>
 </head>
 <body>
 
   <div id="navbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="top">
       <div class="container">
         <a class="navbar-brand" href="index.html">MHCI x HARMAN</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,8 +62,10 @@
                 RESEARCH
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item active" href="research.html">summary</a>
-                <a class="dropdown-item" href="research_documentation.html">full documentation</a>
+                <a class="dropdown-item active" href="research.html">EXPLORATORY</a>
+                <a class="dropdown-item" href="user_research.html">TESTING ENVIRONMENT</a>
+                <a class="dropdown-item" href="research_documentation.html">FULL DOCUMENTATION</a>
+                <a class="dropdown-item" href="tree.html">UNEXPLORED OPPORTUNITIES</a>
               </div>
             </li>
             <li class="nav-item">
@@ -64,101 +86,165 @@
 
   <div class="container animated fadeIn">
     <div class="row">
-      <div class="col-3">
-        <h1 class="animated fadeIn">Research Overview</h1>
+
+      <div class="position-fixed">
+        <div class="col-lg-7">
+        <h1 class="uppercase">Research Overview</h1>
         <p>Identifying Areas of Opportunity.</p>
       </div>
+      </div>
 
-      <div class="col-9">
-        <img src="images/woz.gif" class="img-fluid">
-        <div class="row">
-          <div class="col-sm-8">
+      <div class="col-lg-3"></div>
+
+      <div class="col-lg-9">
+        <div class="col-lg-9 mx-auto d-block">
+          <figure class="figure">
+            <img src="images/woz.gif" class="img-fluid" alt="Responsive image">
+            <figcaption class="figure-caption">The interior vehicle setup for our Wizard of Oz experiment.</figcaption>
+          </figure>
+        </div>
+        <div class="row inner-row">
+          <div class="col-lg-8">
             <h2>Two Areas of User Experience Opportunity</h2>
-            <p>Through our research, we identified two prominent areas of opportunity in the sphere of autonomous driving user experience: proximity preference and contextual decisions.
-
-These moments of collaboration between the human and the autonomous vehicle break down into the driver wanting to change their distance to medians, other vehicles, oncoming traffic, and lane keeping (proximity preference), and binary decisions about going or not going (contextual decisions).</p>
+            <p>
+              Through our research, we identified two prominent areas of opportunity in the sphere of autonomous driving user experience: proximity preference and contextual decisions.
+            </p>
+            <p>
+              These moments of collaboration between the human and the autonomous vehicle break down into the driver wanting to change their distance to medians, other vehicles, oncoming traffic, and lane keeping (proximity preference), and binary decisions about going or not going (contextual decisions).
+            </p>
           </div>
-          <div class="col-sm-4">
+          <div class="col-lg-4">
             <hr class="red"/>
             <h3>Wizard of Oz Autonomous Driving Experiment</h3>
-            <p>By staging a mock self-driving car, we were able to get participants to react as they might in the real thing</p>
+            <p>
+              By staging a mock self-driving car, we were able to get participants to react as they might in the real thing.
+            </p>
           </div>
         </div>
-    </div>
-        <div class="row">
-          <img src="images/two_opps.png" class="img-fluid">
+        <hr/>
+        <div class="row inner-row">
+          <div class="col-lg-6">
+            <img src="images/two_opps.png" class="img-fluid">
+          </div>
+          <div class="col-lg-6">
+            <h4>Proximity Preference</h4>
+            <p>
+              Proximity preference can be defined as a continuous spectrum of tweaking a car’s exact position relative to other obstacles, and we found that users constantly care about a car's position relative to other objects nearby.
+            </p>
+            <p>
+              Through interviews with Tesla owners who use the AutoPilot feature, we identified that they are always concerned about their distance to surrounding cars and their distance from medians and barriers - it is something that constantly makes them uncomfortable.
+            </p> 
+          </div>
         </div>
         <br/>
-        <div class="row">
-          <div>
-            <h4>Proximity Preference</h4>
-            <p>Proximity preference can be defined as a continuous spectrum of tweaking a car’s exact position relative to other obstacles, and we found that users constantly care about a car's position relative to other objects nearby.
-
-Through interviews with Tesla owners who use the AutoPilot feature, we identified that they are always concerned about their distance to surrounding cars and their distance from medians and barriers - it is something that constantly makes them uncomfortable.</p>
+        <hr/>
+        <div class="col-lg-4 mx-auto d-block">
+          <figure class="figure">
+            <img src="images/urps1.png" class="img-fluid" alt="Responsive image">
+          </figure>
+        </div>
+        <div class="row inner-row">
+          <h4>Contextual Decisions</h4>
+          <p>
+            The other major area identified in helping to improve the human/AV collaborative driving experience is contextual decisions. These are binary decisions in which users will either want the car to do something, or not.
+          </p>
+          <p>
+            Consider passing a bus, waiting at a stop sign, making a right on red - all of those are discrete situations where the driver makes the decision of whether they want the car to move or wait.
+          </p>
+          <p>
+            All of this led us to the conclusion that <strong><i>users want the car to drive like they do.</i></strong>
+          </p>
+          <p>
+            The bottom line with contextual decisions is that there are moments which define how a user would expect to drive themselves. Our end users have preconceived notions for autonomous vehicles that cannot be ignored.
+          </p>
+        </div>
+        <div class="row inner-row">
+          <div class="col-lg-4 mx-auto d-block">
+            <figure class="figure">
+              <img src="images/urps2.png" class="img-fluid" alt="Responsive image">
+            </figure>
           </div>
         </div>
-        <div class="row">
-          <img src="images/urps1.jpg" class="img-fluid">
-            <h4>Contextual Decisions</h4>
-            <p>The other major area identified in helping to improve the human/AV collaborative driving experience is contextual decisions. These are binary decisions in which users will either want the car to do something, or not.
-
-Consider passing a bus, waiting at a stop sign, making a right on red - all of those are discrete situations where the driver makes the decision of whether they want the car to move or wait.
-
-All of this led us to the conclusion that...</p>
-            <h2>Users want the car to drive like they do</h2>
-            <p>The bottom line with contextual decisions is that there are moments which define how a user would expect to drive themselves. Our end users have preconceived notions for autonomous vehicles that cannot be ignored.</p>
-            <img src="images/urps2.jpg" class="img-fluid">
+        <hr/>
+        <div class="row inner-row give-padding">
+          <h4>Wizard of Oz Experiment</h4>
+          <p>
+            We arrived at these insights after conducting several interview sessions, with the most fruitful one being an experiment where we created a self-driving car environment inside of a regular car. By taking participants out for a ride in what they thought was an autonomous vehicle, we got to understand their preferences, needs, goals, hesitations and inner thoughts.
+          </p>
         </div>
-        <div class="row">
-            <h4>Wizard of Oz Experiment</h4>
-            <p>We arrived at these insights after conducting several interview sessions, with the most fruitful one being an experiment where we created a self-driving car environment inside of a regular car. By taking participants out for a ride in what they thought was an autonomous vehicle, we got to understand their preferences, needs, goals, hesitations and inner thoughts.</p>
-            <h4>Predefined Route with Critical Incidents</h4>
-            <p>After an introductory interview, we took the participant on a pre-defined route which included consistent incidents that we specifically designed to elicit emotion: pedestrian interaction, unprotected turns, blind corners, stop signs, stop lights, tight alleyways, and construction zones. Participants also encountered unplanned incidents that would come up on any drive, such as cars pulling out, lane changes, and other cars signaling to go. 
-
+        <div class="row inner-row give-padding">
+          <h4>Predefined Route with Critical Incidents</h4>
+          <p>
+            After an introductory interview, we took the participant on a pre-defined route which included consistent incidents that we specifically designed to elicit emotion: pedestrian interaction, unprotected turns, blind corners, stop signs, stop lights, tight alleyways, and construction zones. Participants also encountered unplanned incidents that would come up on any drive, such as cars pulling out, lane changes, and other cars signaling to go. 
+          </p>
+          <p>
             The participant's reactions to these incidents formed the raw data for our analysis. Through this process we were able to collect very concrete and specific instances that triggered driver preferences. This experiment helped us ground our user testing in real world examples, not speculative ones. 
-
-            On that route there were wide ranges of reactions, with the most common ones we heard was 'I would have gone there or I would not have' - exemplifying the contextual decisions drivers would make in the moment.</p>
+          </p>
+          <p>
+            On that route there were wide ranges of reactions, with the most common ones we heard was 'I would have gone there or I would not have' - exemplifying the contextual decisions drivers would make in the moment.
+          </p>
         </div>
-        <div class="row">
-            <h4>Contextual Decision Making</h4>
-            <p>During the debrief from the driving segment, participants judged their whole experience through the lens of weighing how the car handled those specific moments compared to their preferences as a driver.
-
-            From this, we were able to identify that, <strong>a good user experience for autonomous vehicles is made up of the AI handling situations as the driver would</strong>.
-            </p>
-            <h4>Current Technology Isn't Dynamic Enough</h4>
-            <p>Current autonomous systems can’t provide the flexibility 
-and situational awareness to respond to all contexts the way the passenger wants them to, but people need that in order for a successful experience.
-
-For example if drivers come across a large obstructing their driving, some people will want to speed up and pass it immediately, some want to hang back. 
-
-That decision depends on many different factors, it depends on all personal preferences that are multiplied across different contexts in people’s lives. 
-
-Tesla drivers that we interviewed expressed a desire for AutoPilot to drive differently depending on factors such as: who is in the car, their mood that day, if they are running late
-how they drive without AutoPilot engaged
-
-User's preferences for how an autonomous vehicle wants to drive in specific instances is all dependent on an innumerable number of factors that are all multiplied across themselves. Not only do individuals have diverse sets of preferences but they can change their mind at any given time.
-
-Humans make these split-second decisions without giving it a second thought, but we had to break these instances down into individual reactions to understand how a driver’s preferences would need to be addressed and how all this would be tackled in an autonomous vehicle scenario
-
-Knowing that current AV systems can’t provide the flexibility and situational awareness to respond all contexts the way the passenger wants it to, we came to the conclusion that The best experience in a co-driving system is created when the user is empowered with agency, throughout the entire drive..
-            </p>
-            <img src="images/two_opps_agency.png" class="img-fluid">
-                      <div class="col-sm-8">
-            <h2>Steve is a Complex Human</h2>
-            <p>To exemplify this concept, let's apply this thinking to a mini scenario of Steve on his way to work. 
-
-Steve is in autonomous mode while driving on the highway and begins to encounter various situations that he wants to have control over during his drive - even though the car is driving itself. He wanta to change the lane keeping, or pass a bus.
-
-In order to do so, his preferences are subcounsciously activated and his needs change in that moment.</p>
+        <div class="row inner-row give-padding">
+          <h4>Contextual Decision Making</h4>
+          <p>
+            During the debrief from the driving segment, participants judged their whole experience through the lens of weighing how the car handled those specific moments compared to their preferences as a driver.
+          </p><p>
+            From this, we were able to identify that:
+          </p>
+          <h3 class="grey white-text" style="padding: 10px;">
+              A good user experience for autonomous vehicles is made up of the AI handling situations as the driver would.
+          </h3>
+        </div>
+        <div class="row inner-row give-padding">
+          <h4>Current Technology Isn't Dynamic Enough</h4>
+          <p>
+            Current autonomous systems can’t provide the flexibility and situational awareness to respond to all contexts the way the passenger wants them to, but people need that in order for a successful experience.
+          </p>
+          <p>
+            For example if drivers come across a large obstructing their driving, some people will want to speed up and pass it immediately, some want to hang back. 
+          </p>
+          <p>
+            That decision depends on many different factors, it depends on all personal preferences that are multiplied across different contexts in people’s lives. 
+          </p>
+          <p>
+            Tesla drivers that we interviewed expressed a desire for AutoPilot to drive differently depending on factors such as: who is in the car, their mood that day, if they are running late, how they drive without AutoPilot engaged.
+          </p>
+          <p>
+            User's preferences for how an autonomous vehicle wants to drive in specific instances is all dependent on an innumerable number of factors that are all multiplied across themselves. Not only do individuals have diverse sets of preferences but they can change their mind at any given time.
+          </p>
+          <p>
+            Humans make these split-second decisions without giving it a second thought, but we had to break these instances down into individual reactions to understand how a driver’s preferences would need to be addressed and how all this would be tackled in an autonomous vehicle scenario.
+          </p>
+          <p>
+            Knowing that current AV systems can’t provide the flexibility and situational awareness to respond all contexts the way the passenger wants it to, we came to the conclusion that The best experience in a co-driving system is created when the user is empowered with agency, throughout the entire drive.
+          </p>
+          <hr/>
+          <div class="col-lg-6">
+            <div class="image-holder">
+              <img src="images/two_opps_agency.png" class="img-fluid">
+            </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-lg-6">
+            <h2>Steve is a Complex Human</h2>
+            <p>
+              To exemplify this concept, let's apply this thinking to a mini scenario of Steve on his way to work. 
+            </p>
+            <p>
+              Steve is in autonomous mode while driving on the highway and begins to encounter various situations that he wants to have control over during his drive - even though the car is driving itself. He wants to change lane, or pass a bus.
+            </p>
+            <p>
+              In order to do so, his preferences are subcounsciously activated and his needs change in that moment.
+            </p>
+          </div>
+          <div class="col-lg-4">
             <hr class="red"/>
             <p>Both sets of these areas - Proximity Preference and Contextual Decisions - are brought together successfully through the element of control, building trust with the driver.</p>
           </div>
         </div>
-        </div>
+        <a href="#top">Back to top</a>   
       </div>
-    </div>   
+    </div>
+  </div>
 
 </body>
 <footer class="footer">
@@ -166,4 +252,7 @@ In order to do so, his preferences are subcounsciously activated and his needs c
     <span class="text-muted">2018 MHCI Capstone</span>
   </div>
 </footer>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]');
+</script>
 </html>

@@ -2,6 +2,7 @@
   /* Defining Global color choices */
   --black: #000000;
   --grey: #464646;
+  --light-grey: #EEEEEE;
   --red: #900000;
 };
 
@@ -27,6 +28,24 @@ html {
   }
 }
 
+.not-on-mobile {
+  display: none !important;
+}
+
+.only-on-mobile {
+  display: unset !important;
+}
+
+@media screen and (min-width: 801px) {
+  .not-on-mobile {
+    display: unset !important;
+  }
+
+  .only-on-mobile {
+    display: none !important;
+  }
+}
+
 button {
   font-size: 24px;
   line-height: 32px;
@@ -45,6 +64,10 @@ a.active {
 
 .grey {
   background-color: var(--grey);
+}
+
+.light-grey {
+  background-color: var(--light-grey);
 }
 
 a.active.white-text {
@@ -122,6 +145,13 @@ nav {
 
 .navbar {
   background-color: var(--grey) !important;
+  position: unset;
+  width: 100%;
+}
+
+.navbar-collapse {
+  z-index: 999;
+  background-color: var(--grey) !important;
 }
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -135,12 +165,33 @@ body {
   font-family: 'Roboto';
 }
 
+.image-holder {
+  height: 10%;
+}
+
+.image-holder img {
+  display: block;
+  max-width: 60% !important;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cent-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 h1 {
   font-size: 36px;
   line-height: 42px;
   font-weight: 600;
   color: black;
-  text-transform: uppercase;
 }
 
 h2 {
@@ -191,26 +242,30 @@ p, body {
 
 /* Place text in the middle of the image */
 .hero-text {
-    position: absolute;
+/*    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    transform: translate(-50%, -50%);*/
+    color: black;
 }
 
 /* Place text in the middle of the image */
 .low-text {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
 }
 
+.bottom {
+  margin-bottom: 4%;
+}
+
 /* Sepia */
 .hover09 img {
-  -webkit-filter: sepia(60%);
-  filter: sepia(60%);
+  -webkit-filter: sepia(20%);
+  filter: sepia(20%);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
@@ -229,4 +284,104 @@ p, body {
 
 .delayed-2 {
   -webkit-animation-delay: 1.3s !important;
+}
+
+#navbar {
+  margin-bottom: 1%;
+}
+
+.sidenav {
+   margin-top: 4%;
+   height: 100%; /* Full-height: remove this if you want "auto" height */
+   width: 10%;  /*Set the width of the sidebar */
+   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+   z-index: 1; /* Stay on top */
+   top: 0; /* Stay at the top */
+   left: 10%;
+   background-color: #FFFFFF; /* Black */
+   overflow-x: hidden; /* Disable horizontal scroll */
+   padding-top: 20px;
+}
+
+.inner-row {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.give-padding {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.give-high-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pad-20 {
+  padding: 20px;
+}
+
+li strong {
+  font-size: medium;
+}
+
+@media screen and (max-width: 576px) {
+  .position-fixed {
+    position: unset !important;
+  }
+  .container {
+    width: 90% !important;
+  }
+  .inner-row {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .inner-row-push {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  /* Place text in the middle of the image */
+  .low-text {
+      position: unset;
+      top: unset;
+      left: unset;
+      transform: unset;
+      color: unset;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .position-fixed {
+    position: unset !important;
+  }
+  .inner-row-push {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .low-text {
+      position: unset;
+      top: unset;
+      left: unset;
+      transform: unset;
+      color: unset;
+  }
+}
+
+@media screen and (min-width: 769px) and  (max-width: 992px) {
+  .position-fixed {
+    position: unset !important;
+  }
+  .inner-row-push {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .low-text {
+      position: unset;
+      top: unset;
+      left: unset;
+      transform: unset;
+      color: unset;
+  }
 }

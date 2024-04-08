@@ -13,18 +13,28 @@ body, html {
     height: 100%;
 }
 
+.top-room {
+  margin-top: 10%;
+}
+
+.container {
+    height:auto;
+}
+
 .parallax { 
     /* The image used */
-  background-image: url('http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-169280.jpg');
+  background-image: url('../images/dash2.png');
 
     /* Full height */
-    height: 100%; 
+    height: 100%;
+    width: 100%; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
-    background-size: cover;
+    /*background-size: cover;*/
+    background-size: 100%;
 }
 
 .grey {
@@ -41,17 +51,9 @@ body, html {
   border-top: 0.5px solid var(--grey);
 }
 
-.fifty {
-  height: 500px;
-}
 
-.eighty {
-  height: 600px;
-}
-
-nav {
-  margin-top: 0px;
-  margin-bottom: 20px;
+#navbar {
+  margin-bottom: 0 !important;
 }
 
 .carat {
@@ -63,9 +65,153 @@ nav {
   margin-top: 60px;
 }
 
-#diagram {
-  margin-left: 60px;
-  margin-bottom: 30px;
+.hero-text {
+  padding-top: 60px;
+}
+
+.not-on-mobile {
+  display: none !important;
+}
+
+.only-on-mobile {
+  display: unset !important;
+}
+
+.mobile-center {
+  text-align: center !important;
+}
+
+.row {
+  padding-bottom: 20px;
+}
+
+.display-4 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.mobile-push{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.img-fluid {
+  max-width: 90%;
+}
+
+/* Sepia */
+.hover09 img {
+  -webkit-filter: sepia(30%);
+  filter: sepia(30%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.hover09:hover img {
+  -webkit-filter: sepia(0);
+  filter: sepia(0);
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .display-4 {
+    font-size: 3.25rem;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .img-fluid {
+    max-width: 90%;
+  }
+
+  .mobile-push{
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  .parallax { 
+    /* The image used */
+    background-image: url('../images/dash2.png');
+
+      /* Full height */
+      height: 100%;
+      width: 100%; 
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: left;
+      background-repeat: no-repeat;
+      /*background-size: cover;*/
+      background-size: 50%;
+  }
+
+  .container {
+    height:auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .fifty {
+    height: 500px;
+  }
+
+  .mobile-center {
+    text-align: unset !important;
+  }
+
+  .row {
+    padding-bottom: unset;
+  }
+
+  .eighty {
+    height: 600px;
+  }
+
+  #diagram {
+    margin-left: 60px;
+    margin-bottom: 30px;
+  }
+
+  .display-4 {
+    font-size: 4.5rem;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .hero-text{
+    padding-top: 0;
+  }
+
+  .desktop-center {
+    text-align: center !important;
+  }
+
+  .top-room {
+    margin-top: 10%;
+  }
+
+  .container {
+      height:70%;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .mobile-height-auto {
+    height: auto !important;
+  }
 }
 
 

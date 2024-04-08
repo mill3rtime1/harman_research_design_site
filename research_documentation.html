@@ -4,10 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Linking CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Linking Javascripts -->
   <script
@@ -26,7 +44,7 @@
 <body>
 
   <div id="navbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="top">
       <div class="container">
         <a class="navbar-brand" href="index.html">MHCI x HARMAN</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,8 +62,10 @@
                 RESEARCH
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="research.html">summary</a>
-                <a class="dropdown-item active" href="research_documentation.html">full documentation</a>
+                <a class="dropdown-item" href="research.html">EXPLORATORY</a>
+                <a class="dropdown-item" href="user_research.html">TESTING ENVIRONMENT</a>
+                <a class="dropdown-item active" href="research_documentation.html">FULL DOCUMENTATION</a>
+                <a class="dropdown-item" href="tree.html">UNEXPLORED OPPORTUNITIES</a>
               </div>
             </li>
             <li class="nav-item">
@@ -66,13 +86,16 @@
 
   <div class="container animated fadeIn">
     <div class="row">
-      <div class="col-3">
-        <h1 class="animated fadeIn">FULL<br/>RESEARCH<br/>DOCS</h1>
+      <div class="position-fixed">
+        <div class="col-lg-12">
+        <h1 class="animated fadeIn uppercase">FULL<br/>RESEARCH<br/>DOCS</h1>
+        <a href="#research_preface">Research Preface</a>
+        <br/>
         <a href="#secondary_research">Secondary Research</a>
         <br/>
         <a href="#av_users">Users of Autonomous Vehicles</a>
         <br/>
-        <a href="#major_players">Major Players in the Autonomous Vehicle Domain</a>
+        <a href="#major_players">Major Players</a>
         <br/>
         <a href="#questions">Questions</a>
         <br/>
@@ -81,9 +104,16 @@
         <a href="#primary_research">Primary Research</a>
         <br/>
         <a href="#data_analysis">Data Analysis</a>
+        <br/>
+        <a href="#form_ut">Form User Testing</a>
+        <br>
+        <a href="#paper_ut">Paper Interaction User Testing</a>
+        <br/>
+        <a href="#digital_ut">Digital Interaction User Testing</a>
+    </div>
       </div>
-
-      <div class="col-9" id="research_preface">
+      <div class="col-lg-9 offset-lg-3" id="research_preface">
+        <div class="row inner-row">
         <h2>Research Preface</h2>
         <p>
           To kick off the Capstone project experience, our team began by first seeking to balance our understanding of the autonomous vehicle (AV) space. One concern for us from the start was that some members of the team have worked in some capacity with the car or AV space, such as through an independent study or from full-time positions before the program. We wanted everyone on the team to be as equally educated in the AV space as possible to prevent any unnecessary dependencies moving forward.
@@ -95,9 +125,9 @@
         <p>
           We also read into some of the infrastructural ideas being tossed around, such as the idea of a “Smart Crosswalk” or a “Smart City” and how the AV landscape was hoping to leverage some capabilities of the physical environment surrounding it. After some consideration, however, we later decided that the concept of smart cities would be out of scope for us, since we cannot easily depend on infrastructure and policy to be supportive as of now.  Our interest in focusing on a more immediate reality further strengthened our decision to focus on level-3 autonomy.
         </p>
-      </div>
     </div>
-    <div class="row" id="secondary_research">
+    <hr/>
+    <div class="row inner-row" id="secondary_research">
       <h2>Secondary Research</h2>
         <p>
           The team conducted a great deal of secondary research and literature review during the first 1.5 months of the project.  This dive into existing research helped us learn about the autonomous vehicle space, both its current state and speculated future.  Our readings delved into a multitude of areas, ranging everywhere from the ethics of AV passenger responsibility, to implementations of augmented reality displays in AVs.  However, our most revisited and essential research assets were largely made up of:
@@ -108,7 +138,7 @@
           </ul>
         </p>
       </div>
-      <div class="row">
+      <div class="row inner-row">
       <h3>User Experience of Autonomous Vehicles</h3>
       <p>
         Due to the incomplete and unfinished technological development of AVs, it probably won’t come as a surprise that there has not yet been enough attention given to the user experience of autonomous vehicles.  However, we did find a handful of studies outlining some of the largest problem areas at hand.
@@ -123,7 +153,7 @@
         The team also came across the concept of strategic distraction during our research.  One study by Wendy Ju found that users in an AV who were watching videos on an iPad performed better at takeover tasks than those who were just asked to supervise the AV system.  This demonstrated that a way of mediating overreliance on the automated system and disengagement from supervision responsibilities is to engage the user in a certain degree of distraction.  This researcher is also noteworthy as she provided the direct inspiration for our Wizard of Oz autonomous car set-up in our primary research phase.
       </p>
     </div>
-    <div class="row">
+    <div class="row inner-row">
       <h3>Learnings from current AV systems</h3>
       <p>
         We also encountered research on current AV systems and their limitations.  One study discussed how users of Tesla Autopilot complain of poor, spotty lane detection, and abrupt braking, acceleration, and deceleration.  Another Tesla study found unreliable handling of subtle and complex road conditions.  In addition, this paper discussed the importance of a co-driving system, in which the human must monitor the autonomous driving system and be available for takeover during AV failures of environment context.
@@ -132,7 +162,8 @@
         Another interesting finding was Waymo’s central UX principles for their autonomous driving system.  They emphasize four tenants: giving the driver the info they need, helping to anticipate future events, communicating the car’s response to events on the road to the user, and finally, helping passengers safely engage with the vehicle.  This demonstrates their consideration of transparency and an intuitive means of communication with the vehicle, which is also reflected in research mentioned previously.
       </p>
     </div>
-    <div class="row" id="av_users">
+    <hr/>
+    <div class="row inner-row" id="av_users">
       <h2>Users of Autonomous Vehicles</h2>
       <p>
         Our team also strived to learn about the future target audience for fully-functioning, commercially-available AVs.  We found many theories revolving around the concept of a shared autonomy future, meaning that in the next couple decades we can expect wide adoption of autonomous ride-sharing vehicles as an alternative to car ownership.  A number of studies described the most likely adopters of this shared autonomy future to be young, urban, educated, tech-savvy, environmentally conscious people who currently do not have a strong desire to own cars due to their environment, and who use ride-share services now.  One study also mentioned that those most likely to own autonomous vehicles in the future, instead of opting for the shared autonomy model, are individuals who currently own vehicles and have not tried ride-share services.  This research provides some perspective for who our ideal demographics are to test our designs going forward.
@@ -141,25 +172,26 @@
         We also found a small amount of research on what people might want to do with the newfound free time that comes from AVs, as this is integral to the non-driving aspect of the AV user experience.  Unsurprisingly, we found that people want to do what they do already in many other travel contexts - talk to others, text and call friends and family, listen to music, daydream, eat and drink, and browse the internet.  This helps inform what facilitation of these activities we should provide, and also how we can leverage these desires in strategic distraction methods.
       </p>
     </div>
-    <div class="row" id="major_players">
+    <hr/>
+    <div class="row inner-row" id="major_players">
       <h2>Major Players in the Autonomous Vehicle Domain</h2>
       <p>
         Our team also assembled some shared repositories for information regarding key companies in AV research and development. We focused on some of the efforts of external players, such as Waymo, Tesla, Uber, and more of the traditional car manufacturers below.
       </p>
     </div>
-    <div class="row">
+    <div class="row inner-row">
       <h3>Tesla Autopilot</h3>
       <p>
         The existing implementation of Tesla autopilot provides an approximately level-2 experience of autonomous driving. There exists a level of takeover and handover where the car is either in autopilot or not in autopilot. While is autopilot, the car is able to control speed (as in relative cruise control, being aware of distance to vehicles ahead) as well as lane positioning and can perform gradual turns and bends. An important note is that the Tesla vehicle, while in autopilot mode, does not observe stop signs or traffic lights: it simply rolls through. This can be concerning to a Tesla user in autopilot mode if they are unfamiliar with the system’s limitations and helps to foster a sense of danger to the user in autopilot mode. Tesla also has controls on the steering wheel for the driver to fine-tune the speed limits as well as tailing distance to the car ahead. Currently, these controls are implemented as knobs.
       </p>
     </div>
-    <div class="row">
+    <div class="row inner-row">
       <h3>Uber ATG</h3>
       <p>
         Uber is currently piloting its level-3 autonomous vehicles in several major cities in the United States (namely Pittsburgh, Phoenix, and the San Francisco bay area). Uber’s model of shared driving experiences remains, with the customer of the Uber service being simply a passenger in the vehicle while employees of Uber are drivers, engaging in takeover and handover with the vehicle. The vehicle features LIDAR technology atop the car, as well as a tablet interface within the back-seat area of the vehicle to portray vehicular transparency to the customer.
       </p>
     </div>
-    <div class="row">
+    <div class="row inner-row">
       <h3>Waymo</h3>
       <p>
         Waymo is operating in a similar space to Uber ATG, where they are providing an on-demand ridesharing service to customers involving approximately level-3 autonomous vehicles. Waymo allows for the user to initialize the ride, with a “Start Ride” button. Once the ride has started, Waymo also uses a tablet interface to convey information about the ride to the end user, such as a localized map and estimated time of arrival, but also information about the car itself (including what the car is detecting through its LIDAR, radar, sound, and other sensory technology). Furthermore, the car always affords the user the ability to pull over, with a “pull over” button displayed to the user. The goals for Waymo are to provide a clear interface for a passenger to understand more about the vehicle as well as interface with the vehicle.
@@ -168,25 +200,26 @@
         From a functional perspective, Waymo and Uber are similar in their goals for the customer in a ridesharing experience. The technology is very similar as well, highlighted by a 2017 lawsuit in which Waymo will receive 0.34 percent of Uber’s equity, valued at $245 million.
       </p>
     </div>
-    <div class="row">
+    <div class="row inner-row">
       <h3>Concept Cars</h3>
       <p>
         With a history of engineering prowess, the traditional concept car companies also have a fair stake in the realm of autonomous vehicle technology. Note that the concept cars mainly focus on level-4 or 5 autonomy (with the exception of Audi, who is on the cusp of level-3 in production today).
       </p>
     </div>
-    <div class="row">
+    <div class="row inner-row">
       <h6>Audi</h6>
       <p>
         Audi has declared itself to be at the forefront of autonomous vehicle technology in commercial cars, and for good reason. In 2017, Audi unveiled its luxury A8 Sedan which features an “AI traffic jam pilot” in which the car can handle acceleration, braking, steering, and more under 37mph, so long as there is a physical barrier between the two sides of the highway. The key is that it would not require any driver attention in those moments. Audi has also claimed to have been partnering with Nvidia to sell level 4 AVs by 2020, however whether or not they are still on target remains to be seen.
       </p>
     </div>
-    <div class="row">
+    <div class="row inner-row">
       <h6>BMW/Rolls Royce/Renault</h6>
       <p>
         Luxury carmaker BMW is also looking to expand into the AV landscape, with an unveiling of a “living room on wheels” designed for the future of autonomous vehicles (level-5, full autonomy). The car itself does not feature a steering wheel or any traditional controls. Instead, it has a large television for entertainment, since attention would not be needed on the road. Rolls Royce is also approaching the full autonomous space as a living room on wheels. While neither has implemented above level-3 autonomy, BMW has some standard aspects of autonomous driving in its vehicles today (such as adaptive cruise control), but remains in research of level-5 autonomy.
       </p>
     </div>
-    <div class="row" id="questions">
+    <hr/>
+    <div class="row inner-row" id="questions">
       <h2>Questions</h2>
       <p>
         After completing secondary research and exploring exactly what is being accomplished in the field of autonomous vehicles, our team then sought to enumerate our personal questions surrounding the autonomous vehicle space in order to figure out both what we were interested in as a team, and any hierarchical structure that could arise. We performed a post-it note activity, where each member of the team wrote individual questions they had on post-it notes and then grouped alike questions on the board, leading to higher buckets to classify such information.
@@ -318,13 +351,14 @@
         Organizing and prioritizing these questions helped us create a primary research plan going forward.
       </p>
     </div>
-    <div class="row" id="research_plan">
+    <hr/>
+    <div class="row inner-row" id="research_plan">
       <h2>Research Plan</h2>
       <p>
         Upon enumerating our list of motivating questions, our team set out to construct a research plan to dictate our efforts moving forward. We looked to combine our known research methods with our questions in a means that would best help narrow down what we would focus on. We also sought to prioritize questions that seemed more fundamental to a mixed-initiative vehicle experience.
       </p>
-      <table class="table">
-        <thead>
+      <table class="table table-sm">
+        <thead class="thead-dark">
           <tr>
             <th scope="col">Priority (1 being highest)</th>
             <th scope="col">Research Goals</th>
@@ -411,7 +445,7 @@
             <th scope="row">2</th>
             <td>desired experience</td>
             <td>Preferences</td>
-            <td>What preferences of the in car experience change from person to person while beng driven?</td>
+            <td>What preferences of the in car experience change from person to person while being driven?</td>
             <td>Post-simulation interview</td>
             <td>anybody</td>
           </tr>
@@ -445,27 +479,40 @@
         Considering our research method choices, we decided to broadened the range of techniques used to explore the domain in order to attack the AV space from as many angles as possible. We cared about first trying to learn all we could about the domain from experts or those involved with AVs right now (such as owners of Tesla vehicles with autopilot or car salespeople). We also recognized the importance of constructing our own simulations to help us better elicit user emotions. This immediately resulted in our Wizard of Oz study (WoZ).
       </p>
     </div>
-    <div class="row" id="primary_research">
+    <!-- <a href="#top">Back to Top</a> -->
+    <br/>
+    <hr/>
+    <div class="row inner-row" id="primary_research">
       <h2>Primary Research Methods</h2>
     </div>
-    <div class="row">
+    <div class="row inner-row">
       <h3>Wizard of Oz (WoZ)</h3>
       <p>
         In order to explore issues of the user’s sense of trust, safety, control, and enjoyment, we created a “Wizard of Oz” (WoZ) experiment simulating the experience of being a passenger in a self-driving car.  A real driver, obscured by a foam core divider, operated the vehicle at all times with the participant in the passenger seat.  We also had a facilitator in the backseat prompting the participant with questions and taking notes, in addition to cameras recording audio and visual information facing the participant and out the windshield.  Participants were given the impression that the driver was there for liability reasons and that the vehicle was operating itself.  Despite our simple set-up, majority of participants stated at the end of the study that they thought it was a fully-operating self-driving vehicle.
       </p>
-      <img src="images/WoZ.png" class="img-fluid" alt="Responsive image">
+      <div class="col-lg-6 mx-auto d-block">
+        <figure class="figure">
+          <img src="images/full_woz.png" class="img-fluid" alt="Responsive image">
+          <figcaption class="figure-caption">The interior vehicle setup for our Wizard of Oz experiment.</figcaption>
+        </figure>
+      </div>
       <p>
         Users were taken on a fixed loop route that included planned critical incidents like stop signs, navigating pedestrian-heavy intersections, and unprotected left turns, plus inevitable unplanned incidents like halted mail trucks and other cars blocking the road while parking.
       </p>
-      <img src="images/course.png" class="img-fluid" alt="Responsive image">
+      <div class="col-lg-8 mx-auto d-block">
+        <figure class="figure">
+          <img src="images/woz_data.png" class="img-fluid" alt="Responsive image">
+          <figcaption class="figure-caption">Points of data capture for our Wizard of Oz experiment.</figcaption>
+        </figure>
+      </div>
       <p>
         Participants were instructed to “think aloud” during the entire drive, which is a self-explanatory user research technique used to find problem areas in a system.  The facilitator took notes on these comments, and prompted the user after every critical incident to describe what they expected and how they felt about the events that took place.  Our team conducted 11 of these WoZ experiments with a  quasi-representative sample of participants recruited from Carnegie Mellon University and Craigslist.
       </p>
     </div>
-    <div class="row">
+    <div class="row inner-row">
       <h3>Interviews</h3>
     </div>
-    <div class="row">
+    <div class="row inner-row">
       <h6>Tesla Interviews</h6>
       <p>
         We conducted phone interviews with eight Tesla owners to understand their experience with Tesla’s Autopilot system, which is the most advanced semi-autonomous driving system currently available.  These users represented our best access to the experience of autonomous car users, who don’t currently exist.
@@ -474,7 +521,7 @@
         Members of our team asked Tesla owners about reasons they like or dislike Tesla Autopilot, what driving situations make them uncomfortable, when they turn it on or off, and if they wish anything about the experience was different.
       </p>
     </div>
-    <div class="row">
+    <div class="row inner-row">
       <h6>Car Enthusiast Interviews</h6>
       <p>
         We also conducted interviews over the phone and in person with nine self-identified car enthusiasts to learn about what people love about driving, and how we might retain that enjoyment in an autonomous driving system.
@@ -483,11 +530,11 @@
         They were asked about their experience with cars, what they love about their current vehicles, their thoughts on the future of cars, and what they think about maintaining car culture in an increasingly autonomous future.
       </p>
     </div>
-
-  <div class="row" id="data_analysis">
+  <hr/>
+  <div class="row inner-row" id="data_analysis">
     <h2>Data Analysis</h2>
   </div>
-  <div class="row">
+  <div class="row inner-row">
     <h3>Affinity Diagramming</h3>
     <p>
       After gathering all our interviews from Tesla drivers, car enthusiasts, and our WoZ participants, we set on the task of converting all this raw data into insights.  To do this, we conducted affinity diagramming, turning 1,100+ data points into a series of hierarchical groupings in order to uncover patterns in user comments.  Select different categories below to see overviews of our findings.  “I” statements represent the summarized sentiments of multiple users.
@@ -732,60 +779,506 @@
     </div>
   </div>
   <br/>
-  <div class="row">
+  <!-- <a href="#research_preface">Back to Top</a> -->
+  <br/>
+  <div class="row inner-row">
     <h3>Affinity Diagramming</h3>
     <p>
       Based on our high-level groupings, our team identified six areas of exploration to take with us into the design phase. These were selected based upon the most supported findings in the data, problems that are currently unaddressed by other solutions, and finally what questions our team was most passionate about answering:
     </p>
   </div>
-  <div class="row">
+  <div class="row inner-row">
     <h6>The Moments that Build Trust</h6>
     <p>
       Users’ trust in the AV system increases based upon its performance in specific moments during the ride.  What are these moments, and how can we facilitate them?
     </p>
   </div> 
-  <div class="row">
+  <div class="row inner-row">
     <h6>Learning my Driving Preferences and Incorporating Feedback</h6>
     <p>
       Users want the AV to drive like they would.  How can users convey their driving preferences to the AV during the drive, and how should the vehicle acknowledge and incorporate this feedback?
     </p>
   </div>  
-  <div class="row">
+  <div class="row inner-row">
     <h6>Establishing Driver Agency</h6>
     <p>
       Users need reassurance that they have control over the vehicle, even when it is in autonomous driving mode.  How can we communicate that most effectively and make the user feel in control?
     </p>
   </div> 
-  <div class="row">
+  <div class="row inner-row">
     <h6>Personalized Interior Experiences</h6>
   </div>
-  <div class="row">
+  <div class="row inner-row">
     <p>
       Users want the car to recognize their desires and remember their preferences.  What specifically do users want or not want the car to do for them?
     </p>
   </div>     
-  <div class="row">
+  <div class="row inner-row">
     <h6>What to Make Transparent to the Driver</h6>
     <p>
       Users need the right amount of transparency into the workings of the AV system.  What is necessary to show,  what is too much, and how should this information be displayed?
     </p>
   </div> 
-  <div class="row">
+  <div class="row inner-row">
     <h6>Enjoyable Control of Autonomous Driving</h6>
   </div>
-  <div class="row">
+  <div class="row inner-row">
     <p>
       Users derive joy from controlling their vehicles.  How can this be retained in an AV system?
     </p>
   </div>
-  <div class="row">
+  <hr/>
+  <div class="row inner-row" id="form_ut">
+    <h2>Form User Testing</h2>
+  </div>
+  <div class="row inner-row">
+    <h3>Form Testing | 6 MHCI Students</h3>
+    <!-- Below image is a placeholder -->
+    <figure class="figure">
+      <img src="images/all_curves.png" class="img-fluid" alt="Responsive image mx-auto d-block">
+      <figcaption class="figure-caption">All eight forms tested.</figcaption>
+    </figure>
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/cardboard_s.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Example of S shape, with curves on top and bottom.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/cardboard_j.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Example of J shape, with curve on bottom only.</figcaption>
+      </figure>
+    </div>
+    <h5>Protocol</h5>
     <p>
-      With the selection of these areas for exploration, our exploratory research phase came to close.  See the <a href='design.html'>Design</a> section to observe how these questions led our ideation process.
+      Users were asked to discuss and rank their comfort and confidence using different shapes and sizes of physical controls for the use cases of speed, lane position adjustment, and two types of go/don’t go decisions (right on red and unprotected left).  Some were shown a subset emphasizing difference in shape and severity of curve, some were shown a subset emphasizing size, and some were shown all of them.  This test and all the following conducted for the remainder of the project was prefaced with an introduction to set the context for the user.  This stated that they were in a semi-autonomous vehicle, defined what that meant in terms of car options available and expected user responsibilities, and told them our control was a touch interface for expressing preferences to the car during autonomous driving mode.
     </p>
-  </div>     
+    <h5>Findings</h5>
+    <p>
+      <ul>
+        <li>Users unanimously preferred a smaller size and an S shape, instead of larger sizes and a J or flat shape.</li>
+        <li>Majority brought up wanting to minimize movement, preferred a slight curve as opposed to a more dramatic one, and mentioned wanting haptic feedback and applying a car pedal mental model.</li>
+      </ul>
+    </p>
+  </div>
+  <hr/>
+  <div class="row inner-row" id="paper_ut">
+    <h2>Paper Interaction User Testing</h2>
+  </div>
+  <div class="row inner-row">
+    <h3>Realistic and Abstract Designs | 5 Craigslist Recruits with Driving Experience</h3>
+    <div class="col-lg-4">
+      <figure class="figure">
+        <img src="images/paper_real.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Realistic Model.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-8">
+      <figure class="figure">
+        <img src="images/egg.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Abstract model for speed/adjust in-lane (left) and binary (right).</figcaption>
+      </figure>
+    </div>
+
+    <div class="col-lg-8 mx-auto d-block">
+      <figure class="figure">
+        <img src="images/paper_ss.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Secondary screen image for decreasing speed.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="row inner-row">
+    <h5>Design</h5>
+    <p>
+      These two designs were created to test if a more literal, realistic representation of the car’s movements was more appropriate for the control, or if people would understand and respond to a more abstract, joystick-like control.  In the Realistic design, there’s a distinct area for speed in the upper portion, and an area of lateral in-lane adjustment in the lower area, both of which require a swiping motion along the relevant axis of the control.  In the Abstract design, we had a squishable egg and ridges in cardinal directions around it to encourage the user to squish the object left or right for in-lane adjustment, or up and down for speed adjustment.  The idea was not there there would be an actual 3D object on the control, but that the digital version would have a shape that reacted in the same manner as the egg when touched.  These two designs were accompanied by a secondary screen showing feedback on what action they were performing, and representing that action with icons and minimal labels.
+    </p>
+    <h5>Protocol</h5>
+    <p>
+      Users were asked how they think they can interact with the control (affordances); how they would change their speed, lane position, and make a binary confirmation after being prompted by the secondary screen; and then provide feedback on the interactions that we had in mind.  This was done for both the Realistic and Abstract designs with each user.  These questions were administered while users sat in front of a driving simulator - see <a href="#testing_environment">Testing Environment</a> for more details on the simulator set-up.  At the end of each session, the user was also asked to rate their hand and arm comfort using the S shape compared to a flat shape.
+    </p>
+    <h5>Findings</h5>
+    <ul>
+      <li>All users thought the binary decision was confirmed by tapping the circle instead of sliding (before we explained our design intentions)</li>
+      <li>4/5 maintained that they preferred to press a button instead of slide for binary (after explanation)</li>
+      <li>4/5 liked the S shape better than the flat shape</li>
+      <li>3/5 thought speed area might be forward and reverse, and were confused about lane change or turning for the lateral area (before explanation)</li>
+      <li>3/5 wanted more information in general about speed and in-lane adjustment</li>
+    </ul>
+  </div>
+
+  <div class="row inner-row">
+    <h3>Separated and Consolidated Designs | 9 Craigslist recruits with driving experience</h3>
+  </div>
+
+  <div class="row inner-row">
+    <h6>Control Designs</h6>
+  </div>
+
+  <div class="row inner-row">
+    <div class="col-lg-3">
+      <figure class="figure">
+        <img src="images/paper_disc.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Separated design for speed and in-lane adjustment.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-3">
+      <figure class="figure">
+        <img src="images/paper_disc_bin.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Separated design for Binary.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-3">
+      <figure class="figure">
+        <img src="images/paper_cont.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Integrated design for speed and in-lane adjustment.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-3">
+      <figure class="figure">
+        <img src="images/paper_egg_bin.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Integrated design for binary.</figcaption>
+      </figure>
+    </div>
+
+  </div>
+  <div class="row inner-row">
+    <h6>Secondary Screen Designs</h6>
+  </div>
+
+  <div class="row inner-row">
+
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/ss_1_decel.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Slowing Down.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/ss_1_accel.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Speeding Up.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/ss_1_left.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Shifting Left.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/ss_1_right.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Turning Right.</figcaption>
+      </figure>
+    </div>
+    <div class="light-grey col-lg-8 offset-lg-2 pad-20">
+      <h4>
+        User testing insights that helped inform this design:
+      </h4>
+      <p>
+        <ul>
+          <li>The arrows for speed and lane made people think of reverse instead of slow down, and lane change or turn instead of in-lane adjustment.</li>
+          <li>The visuals on the Realistic model made people think they just need to tap to complete actions.</li>
+          <li>The physical ridges on the Abstract design were confusing and did not add any value.</li>
+        </ul>
+      </p>
+    </div>
 
   </div>
 
+  <div class="row inner-row">
+
+    <h5 style="padding-top: 15px">Design</h5>
+    <p>
+      In this iteration, we kept the same concepts from the previous Realistic and Abstract tests, but changed the visuals and abandoned the physical ridges in the Abstract design.  The team experimented with a less literal visual representation for both designs to focus on whether users responded better to a control layout with separate sections for speed and in-lane adjustment (Separated design), or a more centralized, joystick-like control (Consolidated design), without the factor of easier identification of the Realistic design functions in the previous iteration.  We also updated the visuals for the secondary screens, maintaining the same concepts that we hadn’t received sufficient feedback on yet.
+    </p>
+    <h5>Protocol</h5>
+    <p>
+      We had users complete the same actions as the last iteration in the same simulator environment.  This entailed asking about affordances; having them adjust speed, change lane position, and confirm a binary decision; and ending with asking about the S curve vs. a flat screen.
+    </p>
+    <ul>
+      <li>8/9 knew what to do for the Consolidated design after being shown how to properly complete the Separated design</li>
+      <li>6/9 questioned the necessity of the long arm movement for binary</li>
+      <li>6/9 thought pressing on the egg in the center of the Consolidated design would do something</li>
+      <li>6/9 liked and understood the Separated design better</li>
+      <li>5/9 wanted more information in general about feedback and system status</li>
+      <li>5/9 pressed the circle in the Separated design instead of swipe (before direction)</li>
+    </ul>
+  </div>
+  <hr/>
+  <div class="row inner-row" id="digital_ut">
+    <h2>Digital Interaction User Testing</h2>
+    <h3>Edge and Center Designs | 7 Craigslist recruits with driving experience</h3>
+  </div>
+  <div class="row inner-row">
+    <h6>Control Designs</h6>
+  </div>
+  <div class="row inner-row">
+    <div class="col-lg-4">
+      <figure class="figure">
+        <img src="images/edge.gif" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Edge Design.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-4">
+      <figure class="figure">
+        <img src="images/center.gif" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Center Design.</figcaption>
+      </figure>
+    </div>
+    <div class="col-lg-4">
+      <figure class="figure">
+        <img src="images/binary_1.gif" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Binary Decision Design.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="row inner-row">
+    <h6>Secondary Screen Designs</h6>
+  </div>
+  <div class="row inner-row">
+    <div class="col-lg-12">
+      <figure class="figure">
+        <img src="images/minimal.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Minimal Secondary Screen Design.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="row inner-row">
+    <div class="col-lg-12">
+      <figure class="figure">
+        <img src="images/separation.png" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Separation Secondary Screen Design.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="row inner-row">
+    <div class="light-grey col-lg-8 offset-lg-2 pad-20">
+      <h4>
+        User testing insights that helped inform this design:
+      </h4>
+      <p>
+        <ul>
+          <li>Users liked and understood how to use the control better when there were separate sections for speed and lane adjustment, as opposed to a central control that could move in four directions.</li>
+          <li>People still didn’t see why they needed to move their arm so much for binary.</li>
+          <li>The physical egg made users think a protrusion would actually be on the touch screen control, instead of just responding in that same manner digitally.</li>
+          <li>Users still wanted more information about the context of speed and lane adjustment maneuvers, and labels on the control.</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <div class="row inner-row">
+    <h5 style="padding-top: 15px">Design</h5>
+    <p>
+      From the previous iteration, we learned that we should stick with something resembling the Separated design instead of the Consolidated design because users understood it better.  We also made sure to reduce arm movement required for binary decisions, add more labels to the control, and tweak the language on the monitor to provide stronger feedback and more information to the user about the outcome of their hand actions.  We continued with one design that maintained the same structure as our Separated design which allowed users to adjust speed or lane position anywhere within the general area of the label (Center design), and experimented with another design that required pulling with broad strokes across specific activation zones, balancing intentionality with freedom from precise movement (Edge design).  We again had the same binary design for each, but tried a new visual way of representing the swipe affordance - making the nebulous shapes touch.
+    </p>
+    <h5>Protocol Tech</h5>
+    <p>
+      For this set of designs, we began testing them digitally on a flat iPad in our simulation set-up.  We also created animations that reflected the user’s touch, and showed confirmation on the control that the user had confirmed a binary decision.
+    </p>
+    <h5>Protocol Questions</h5>
+    <p>
+      Users were again asked the same types of questions from previous protocols, but were also specifically asked what they thought of the secondary screen, and also if this way of controlling the autonomous vehicle was better than taking over completely (manual driving).  Also, half of the participants were shown the Edge design first, and half shown the Center design first, to eliminate any effects of knowing how to do one before exposure to the other.  Finally, users were also shown an alternate set of secondary visuals at the very end of the test for their open input and comparison to the previous design.
+    </p>
+    <h5>Findings</h5>
+  </div>
+
+  <div class="row inner-row">
+    <p>
+      Edge Design:
+    </p>
+  </div>
+  
+  <div class="row inner-row">    
+    <ul>
+      <li>Users unanimously did not understand the pulling strokes from the edges of the control</li>
+      <li>6/7 did not understand “lane adjust” as moving within a lane, as opposed to between lanes</li>
+      <li>4/7 tapped the bumpers instead of pulling on them</li>
+    </ul>
+  </div>
+  
+  <div class="row inner-row">
+    <p>
+      Center Design:
+    </p>
+    <ul>
+      <li>Users unanimously preferred the Center design to the Edge design</li>
+      <li>Users unanimously performed the intended interaction for speed, regardless of which design they were shown first</li>
+      <li>Users unanimously understood swiping left/right to adjust in-lane (aside from confusion about the meaning of “lane adjust” on the control)</li>
+      <li>3/7 thought the bars indicated the number of fingers required for the interaction</li>
+      <li>3/7 appreciated fewer options on the screen</li>
+    </ul>
+
+    <p>
+      Binary Decision:
+    </p>
+    <ul>
+      <li>6/7 thought tapping the bottom shape would confirm the prompt</li>
+      <li>4/7 thought the open black space was an input area for tapping or tracing a path</li>
+      <li>3/7 wanted to confirm the prompt by completing an action incorporating the direction of the turn (like confirming a right turn on red by tracing a right turn path in the black area)</li>
+    </ul>
+
+    <p>
+      Secondary Monitor:
+    </p>
+    <ul>
+      <li>Users split between whether or not the car icon was helpful in the alternate screen design</li>
+      <li>Half of the users were confused about what the circular shapes for the in-lane adjustment screen meant (some thought they indicated movement, or speed, or space creation on that side)</li>
+    </ul>
+
+    <p>
+      Miscellaneous and Broader Insights:
+    </p>
+    <ul>
+      <li>Consensus on our control being better than takeover</li>
+      <li>Users want to tap any complete shape that might be a button</li>
+      <li>Those who want a more minimal design understand the control and its use, while those that ask for more detailed information seem to need more clarification on the value of the control</li>
+      <li>Understanding the translation of hand/arm movement to car movement is linked to how a user perceived the car in its environment</li>
+      <ul>
+        <li>If someone perceives the car as an object in space, they understand what is happening better and more easily</li>
+        <li>If someone is looking at the control as a means of steering a mechanical object, it is more difficult for them to understand how to use the control</li>
+      </ul>
+    </ul>
+  </div>
+  <div class="row inner-row">
+    <h3>New Center Design | 7 Tesla Autopilot users, 7 Craigslist recruits with (regular) driving experience</h3>
+  </div>
+  <div class="row inner-row">
+    <h6>Control Designs</h6>
+  </div>
+  <div class="row inner-row">
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/continuous.gif" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Speed and Nudge in Lane Interface.</figcaption>
+      </figure>
+    </div>
+
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/binary_ui.gif" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Binary Interface.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="row inner-row">
+    <h6>Secondary Screen Designs</h6>
+  </div>
+  <div class="row inner-row">
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/accel.gif" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Acceleration.</figcaption>
+      </figure>
+    </div>
+
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/decel.gif" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Deceleration.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="row inner-row">
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/left.gif" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Lane Position.</figcaption>
+      </figure>
+    </div>
+
+    <div class="col-lg-6">
+      <figure class="figure">
+        <img src="images/binary.gif" class="img-fluid" alt="Responsive image">
+        <figcaption class="figure-caption">Binary Decision.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="row inner-row">
+    <div class="light-grey col-lg-8 offset-lg-2 pad-20">
+      <h4>
+        User testing insights that helped inform this design:
+      </h4>
+      <p>
+        <ul>
+          <li>The Center design was vastly more successful and understandable, allowing most users to perform the speed and lane adjustment maneuvers correctly without guidance.</li>
+          <li>The binary design needs to be adjusted so that it does not look like an open input area, and still encourages the swipe motion.</li>
+          <li>In-lane adjustment visual for the secondary screen needs to be altered so it does not reflect space being created on the side one is moving towards.</li>
+          <li>Any complete shape looks like a button.</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <div class="row inner-row">
+    <h5 style="padding-top: 15px">Design</h5>
+    <p>
+      In the New Center design, the speed and lane adjust screens were kept the same as they were in the Center design previously as it was largely successful.  The binary screen was changed to have a new kind of visual affordance and feedback reminiscent of blinds, eliminating the dark center area and labeling the two options on the control itself.  A “wave and fill” metaphor was leveraged for the new speed display on the secondary screen, showing target speed being set and the progress toward that target speed.  In-lane adjustment was also altered, placing a car icon on a string that resembled the wave from the speed screen, stretching to the left or right direction instead of trying to show arrows or shapes to the side of the vehicle (this was to minimize the impression that space was being created on that side of the car).  Finally, the binary display on the secondary screen also used the “wave and fill” motif to reflect the visuals on the control for binary, and to show the progress of confirmation.
+    </p>
+
+    <h5>Protocol Tech</h5>
+    <p>
+      For this iteration, we put together a system for testing our digital designs on an interactive curved surface instead of a flat tablet.  This involved a plexiglass curve on top of a projector with an attached infrared camera to track user hand movements through the plexiglass, triggering feedback on the screen and changes in the secondary screen and simulator (such as having the simulator increase in speed as the user swipes up on the control).  See [Testing Environment] for more details on the testing apparatus and simulation set-up.
+    </p>
+
+    <h5>Protocol Questions</h5>
+    <p>
+      In the protocol, users were asked to complete the same tasks as recent iterations (affordances, speed, in-lane adjustment, a binary decision, their input on the secondary screen, and thoughts on our intended interaction patterns).  However, in this test, the binary decision was changed from a right on red to passing a bus in order to learn more about user impressions of a different binary situation.  Also, we added extra questions at the end to get some broader input about the concept, including questions about other use cases they would like addressed, and questions for Tesla drivers about when they’ve taken over from Tesla Autopilot before and how our control compares to the controls available to them in their vehicle now.
+    </p>
+
+    <h5>Findings</h5>
+  </div>
+  <div class="row inner-row">
+    <p>
+      Speed
+      <ul>
+        <li>All users except one performed the expected interaction for speed</li>
+        <li>10/14 users expected speed to begin changing as soon as they started moving their hand on the speed portion of the control</li>
+        <li>About half of users understood the meaning and value of the “wave and fill” graphic on the speed display on the secondary screen</li>
+      </ul>
+    </p>
+    <p>
+      In-lane Adjustment:
+      <ul>
+        <li>About half of users understood that the lane adjustment was about moving within a lane, not between lanes</li>
+        <li>“Nudge in lane” was seen as appropriate but some but odd by many - it became clear that it should be changed to “Adjust in Lane” on the control and screen</li>
+        <li>A few users tried to move side to side in the speed area of the control instead of the bottom area</li>
+        <li>6 Tesla drivers and 2 other users wanted more information about the real-life road conditions in the lane adjustment secondary screen (we suspect this has to do with the way Tesla expresses surroundings in their dashboard)</li>
+      </ul>
+    </p>
+
+    <p>
+      Binary:
+  </div>
+  <div class="row inner-row">
+      <br/>
+      <ul>
+        <li>About half of users voiced and appreciated the benefits of the binary swipe instead of a button press</li>
+        <li>Half of users tried to tap the word to confirm instead of swipe</li>
+        <li>A few users swiped up on the control without guidance</li>
+        <li>“Hang back” was soon as too casual or ambiguous by most - will change to “Dismiss”</li>
+      </ul>
+    </p>
+  </div>
+  <div class="row inner-row">
+    <p>
+      Miscellaneous:
+      <ul>
+        <li>9/14 mentioned wanting an emergency stop function (3 Tesla drivers, 6 other users)</li>
+        <li>A few users felt the secondary screen was too far to the right in their field of vision (location in instrument cluster or heads-up display would be better)</li>
+        <li>A few users mentioned that having the same motion for speeding up and confirming binary actions was a good thing</li>
+      </ul>
+    </p>
+  </div>
+  <div class="row inner-row">
+    <a href="#top">Back to Top</a>
+  </div>
+  </div>
+
+  </div>
+</div>
 </body>
 <footer class="footer">
   <div class="container text-center">

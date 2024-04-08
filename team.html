@@ -4,10 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Linking CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Linking Javascripts -->
   <script
@@ -24,7 +42,7 @@
 <body>
 
   <div id="navbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">MHCI x HARMAN</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,8 +60,10 @@
                 RESEARCH
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="research.html">summary</a>
-                <a class="dropdown-item" href="research_documentation.html">full documentation</a>
+                <a class="dropdown-item" href="research.html">EXPLORATORY</a>
+                <a class="dropdown-item" href="user_research.html">TESTING ENVIRONMENT</a>
+                <a class="dropdown-item" href="research_documentation.html">FULL DOCUMENTATION</a>
+                <a class="dropdown-item" href="tree.html">UNEXPLORED OPPORTUNITIES</a>
               </div>
             </li>
             <li class="nav-item">
@@ -64,56 +84,71 @@
 
   <div class="container animated fadeIn">
     <div class="row">
-      <div class="col-3">
-        <h1 class="animated fadeIn">ABOUT THE TEAM</h1>
-        <p>We're Master's candidates at Carnegie Mellon University.</p>
+      <div class="col-lg-12">
+        <h1 class="animated fadeIn uppercase">THE CAPSTONE TEAM</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>A diverse team of five with backgrounds in business, design, technology, and research.</p>
       </div>
 
-      <div class="col-9 animated fadeIn delayed">
+      <div class="col-lg-12 animated fadeIn delayed">
         <div class="row">
-          <div class="col-sm-4 hover09">
-            <img src="images/ross.png" class="img-thumbnail mx-auto d-block">
-            <p class="text-center">
-              <strong>Ross Rybalov</strong><br/>
-              Project Manager
-            </p>
+          <div class="col-sm-2 hover09">
+            <img src="images/ross.png" class="img-thumbnail mx-auto d-block float-left">
           </div>
-          <div class="col-sm-4 hover09">
-            <img src="images/person.jpg" class="img-thumbnail mx-auto d-block">
-            <p class="text-center">
-              <strong>Lisa Park</strong><br/>
-              Design Lead
-            </p>
+          <div class="col-sm-4">
+            <h2>Ross Rybalov</h2>
+            <p><i>Project Manager, Product Designer</i></p>
+            <p>Hailing from Oakland, CA most recently, I graduated with a business degree in Enterprise Marketing from Santa Clara University. I started my career working as an in-house graphic designer for a startup, then transitioned into a product marketing role at a large tech hardware company.</p>
+            <a href="https://www.linkedin.com/in/rossrybalov/" target="_blank">LinkedIn</a>, 
+            <a href="http://www.rossrybalov.com" target="_blank">Website</a>
           </div>
-          <div class="col-sm-4 hover09">
-            <img src="images/jordan.png" class="img-thumbnail mx-auto d-block">
-            <p class="text-center">
-              <strong>Jordan Stapinski</strong><br/>
-              Technical Lead
-            </p>
+          <div class="col-sm-2 hover09">
+            <img src="images/lisa.png" class="img-thumbnail mx-auto d-block">
+          </div>
+          <div class="col-sm-4">
+            <h2>Lisa Park</h2>
+            <p><i>Design Lead</i></p>
+            <p>I was born and raised in the Washington, D.C. area. I have a Bachelor of Fine Arts in Graphic Design from Virginia Commonwealth University. The majority of my work experience lies with web and mobile UI design.</p>
+            <a href="http://lisahpark.com" target="_blank">Website</a>
           </div>
         </div>
+        <br/>
+        <!-- <hr/> -->
+
         <div class="row">
-          <div class="col-sm-4 hover09">
-            <img src="images/person.jpg" class="img-thumbnail mx-auto d-block">
-            <p class="text-center">
-              <strong>Jiyuan Li</strong><br/>
-              Interaction Designer
-            </p>
+          <div class="col-sm-2 hover09">
+            <img src="images/hannah.jpg" class="img-thumbnail mx-auto d-block">
           </div>
-          <div class="col-sm-4 hover09">
-            <img src="images/person.jpg" class="img-thumbnail mx-auto d-block">
-            <p class="text-center">
-              <strong>Hannah Mernyk</strong><br/>
-              Research Lead
-            </p>
+          <div class="col-sm-4">
+            <h2>Hannah Mernyk</h2>
+            <p><i>Research Lead</i></p>
+            <p>Born and raised in the Bay Area, I have a BA in Psychology and a Minor in Spatial Studies from UC Santa Barbara.  My most relevant experience coming into the MHCI program is my cognitive psychology foundation and quantitative and qualitative research experience.</p>
+            <a href="http://www.hannahmernyk.com" target="_blank">Website</a>
           </div>
-          <div class="col-sm-4 hover09">
-            <img src="images/person.jpg" class="img-thumbnail mx-auto d-block">
-            <p class="text-center">
-              <strong>Matthew Miller</strong><br/>
-              Interaction Designer
-            </p>
+          <div class="col-sm-2 hover09">
+            <img src="images/jordan.png" class="img-thumbnail mx-auto d-block">
+          </div>
+          <div class="col-sm-4">
+            <h2>Jordan Stapinski</h2>
+            <p><i>Technical Lead</i></p>
+            <p>I originally am from Princeton, NJ and have been in Pittsburgh now for the last four years. The focus of my work has mainly been technical: including internship experience in financial and educational technology. I have professional experience in full-stack software engineering.</p>
+            <a href="http://jordanstapinski.me" target="_blank">Website</a>, <a href="http://linkedin.com/in/jordanstapinski/" target="_blank">LinkedIn</a>, <a href="https://github.com/jestapinski">GitHub</a>
+          </div>
+        </div>
+        <br/>
+
+        <div class="row">
+          <div class="col-sm-2 hover09">
+            <img src="images/matt.png" class="img-thumbnail mx-auto d-block">
+          </div>
+          <div class="col-sm-4">
+            <h2>Matthew Miller</h2>
+            <p><i>Interaction Designer</i></p>
+            <p>I studied International Relations at Tufts University before pivoting to a career in technology. I began this transition by supporting QA efforts for mobile games at Electronic Arts, then worked in client strategy at an app development agency.  I later became a product manager, first at a transportation company similar to Uber. Some relevant projects include a collaboration with Hyundai during the development of their telematics and infotainment systems, and two driver-facing mobile apps still in use today.</p>
+            <a href="http://www.matthewmiller.design/" target="_blank">Website</a>
           </div>
         </div>
       </div>

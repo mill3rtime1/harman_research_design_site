@@ -4,10 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Linking CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Linking Javascripts -->
   <script
@@ -24,7 +42,7 @@
 <body>
 
   <div id="navbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">MHCI x HARMAN</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,8 +60,10 @@
                 RESEARCH
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="research.html">summary</a>
-                <a class="dropdown-item" href="research_documentation.html">full documentation</a>
+                <a class="dropdown-item" href="research.html">EXPLORATORY</a>
+                <a class="dropdown-item" href="user_research.html">TESTING ENVIRONMENT</a>
+                <a class="dropdown-item" href="research_documentation.html">FULL DOCUMENTATION</a>
+                <a class="dropdown-item" href="tree.html">UNEXPLORED OPPORTUNITIES</a>
               </div>
             </li>
             <li class="nav-item active">
@@ -64,34 +84,127 @@
 
   <div class="container animated fadeIn">
     <div class="row">
-      <div class="col-3">
-        <h1 class="">A Curved Interface for Human-Machine Collaboration</h1>
-        <p>We designed a curved interface that is implemented within the vehicle dashboard. You can visualize our solution in this illustration here in the green. This product exclusively provides the driver different aspects of control in unique situations during their autonomous driving experience.</p>
-      </div>
 
-      <div class="col-9">
-        <img src="images/SS2BC.png" class="img-fluid">
-        <div class="row">
+      <div class="position-fixed">
+        <div class="col-lg-5">
+          <h1 class="uppercase">Giving Safe Control</h1>
+          <p>Allowing a collaborative driving experience between humans and autonomous vehicles.</p>
+        </div>
+      </div>
+      <div class="col-lg-3"></div>
+
+      <div class="col-lg-9">
+        <div class="col-lg-9 mx-auto d-block">
+          <figure class="figure">
+            <img src="images/in_car.png" class="img-fluid" alt="Responsive image">
+          </figure>
+        </div>
+        <div class="row inner-row">
           <div class="col-sm-8">
-            <h2>Concept Development</h2>
-            <p>Our interface stems from a diagrammatic representation of the model, view and controller of the proposed collaborative system. We then escalate the communication between human and machine with a radical continuity that allows the passenger to physically reach into the territory that represents the intelligence system on the other side. At the same time, we allow the knowledge and service of the AI to flow attentively toward the human participant.</p>
+            <p>Our unique interface provides a means for a human driver to interact with an AI which gives the driver a sense of control over a vehicle they are not directly driving. It provides unique affordances to help the human better understand how they can alter the performance of the car while the car is operating on its own, with multiple means of feedback. Most importantly, this complete interface for interacting with an autonomous vehicle pioneers new means of decision making between the vehicle and the human in a collaborative way.</p>
           </div>
           <div class="col-sm-4">
             <hr class="red"/>
-            <h3>Caption</h3>
-            <p>This is a photo caption<br/>or a bulleted list</p>
-            <ul>
-              <li>one</li>
-            </ul>
+            <p>A visualization of our interface in a vehicle</p>
           </div>
         </div>
-        <div class="row">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="images/dxx1.png"></iframe>
-          </div>
-          <div>
-            <h4>Affordances and Interactions</h4>
-            <p>There are four main affordances of this screen that we’ve tested with users that facilitate the assertion of their preferences to the self-driving car. Our interface helps with blind reaching by having a distinctive curve. It communicates location of hand position. It also allows users to understand relative distance as they move up the interface, facilitating minute adjustments like speeding up or down. Proprioception utilizes different perceptual channel. It prevents adding more stimulation to senses that are already overloaded while driving, like vision. Readying facilitates the natural control interaction of resting your hand on something while considering or before submitting an action. Our research with Tesla owners has shown that drivers rest hands on wheel when worried about proximity to median to prepare for takeover. It also avoids false positives because it doesn’t trigger action when the hand is static. The threshold allows driver to push decision up the surface to the vehicle. Driver crosses perceptual threshold based on changing curve angle. It requires intentionality to give directions to the car, and acts as a sort of confirmation. It also prevents false positives. Micro adjustments address the proximity preferences mentioned earlier. It allows user to change lane position based on comfort level.
+        <div class="row inner-row">
+          <h4>Collaborative Decision Making Between Human and AI</h4>
+          <p>
+            The cooperative control introduced by our autonomous driving control paradigm supports the means of decision making with technology spearheaded by other innovations.
+          </p>
+        <div class="col-lg-6 mx-auto d-block">
+          <figure class="figure">
+            <img src="images/apple_iscreen.png" class="img-fluid" alt="Responsive image">
+          </figure>
+        </div>
+        <div class="col-lg-6 mx-auto d-block">
+          <figure class="figure">
+            <img src="images/ai.png" class="img-fluid" alt="Responsive image">
+          </figure>
+        </div>
+          <p>
+            The complete control system allows for a relationship between the human and the AI in a means that is more collaborative than the traditional master/slave relationships of past technologies. We chose to take what is known as a “loose reign” approach to controlling the autonomous vehicle, meaning the command the user sends to the car is filtered through the car’s own artificial intelligence and is acted upon only if the surrounding driving environment permits the action. This means if the human is trying to tell the car to speed up, but the car does not recognize its own position as being appropriate to speed up (such as being at a red light, or stuck in bumper-to-bumper-traffic) the car does not speed up. The car knows what is safe and will only fulfill the request of the human if it can continue to operate safely.
+            <br/>
+            <br/>
+            In our <a href="research.html">research</a> we found there are many prompts and opportunities always available to a driver in a traditional non-autonomous system. For the scope of our project, we decided to focus down on three: speed management, adjustment within a lane, and generic go/don’t go decisions. These prompts of course live under the loose reign paradigm, meaning the human can only adjust these assets of a car’s driving performance if it is safe to do so; the car knows if the human’s actions will continue to result in a safe driving experience.
+
+          </p>
+
+        <div class="col-lg-12 mx-auto d-block">
+          <figure class="figure">
+            <img src="images/full_world_build.png" class="img-fluid" alt="Responsive image">
+            <figcaption class="figure-caption">Humans, AVs, and the surrounding environment.</figcaption>
+          </figure>
+        </div>
+          <div class="row inner-row">
+            <h4>Interfaces</h4>
+            <p>
+              Our bottom interface for control is interactive, allowing for users to send various commands to the vehicle based on external driving context. Through our <a href="research.html">research</a>, we understood the need to allow personalization in the autonomous driving experience, through the use of several various use cases including speed control, adjustment of the vehicle within a lane, and general binary decision making (a go/don’t go decision).
+            </p>
+            <div class="col-lg-6 mx-auto d-block">
+              <figure class="figure">
+                <img src="images/continuous.gif" class="img-fluid" alt="Responsive image">
+                <figcaption class="figure-caption">Our interface for continuous speed and lane nudging control.</figcaption>
+              </figure>        
+            </div>
+            <div class="col-lg-6 mx-auto d-block">
+              <figure class="figure">
+                <img src="images/accel.gif" class="img-fluid" alt="Responsive image">
+                <figcaption class="figure-caption">Secondary Screen Feedback for acceleration.</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6 mx-auto d-block">
+                <iframe src="https://framer.cloud/dDBFW/" width="800" height="600" frameborder="0"/>
+              </iframe>
+            </div>
+            <p>
+              For our speed and lane position interface, we recognized the need for users to have constant access to making these more continuous adjustments. We also understood the positional affordances of the four general cardinal directions and exposed them to provide affordances for controlling speed and positioning within a lane (or “lane nudging”).
+            </p>
+
+            <div class="col-lg-6 mx-auto d-block">
+              <figure class="figure">
+                <img src="images/binary_ui.gif" class="img-fluid" alt="Responsive image">
+                <figcaption class="figure-caption">Our interface for binary, go/don't go decisions.</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6 mx-auto d-block">
+              <figure class="figure">
+                <img src="images/binary.gif" class="img-fluid" alt="Responsive image">
+                <figcaption class="figure-caption">Secondary Screen Feedback for Binary Decisions.</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6 mx-auto d-block">
+              <iframe src="https://framer.cloud/USLIa" width="800" height="600" frameborder="0"/>
+            </iframe>
+            </div>
+            <p>
+              Other driving factors, such as whether or not to make a right turn at a red light, are a bit more hazy, with opportunities presenting themselves but the personalization of the overall driving experience leaves these sorts of decisions undefined from the perspective of the AI. We call these binary decisions. We constructed an interface for these binary decisions that not only scales to meet the unpredictable nature of a drive, but ensures the user is making a calculated decision through a more dedicated “confirm” or “deny” action.
+            </p>
+            <h4>Curvature</h4>
+            <div class="col-lg-6 mx-auto d-block">
+              <figure class="figure">
+                <img src="images/curve_only.png" class="img-fluid" alt="Responsive image">
+                <figcaption class="figure-caption">Our curve affords a unique phenomena of control without the need to look down.</figcaption>
+              </figure>
+            </div>
+            <p>
+              The most unique aspect of the overall design is the curved input control sitting below. The curvature provides affordances as to hand and finger positioning which allow the user to make more informed decisions about where their hand position is and where they wish to move to without needing to look and place the hand on the desired point. 
+            </p>
+            <div class="col-lg-12 mx-auto d-block">
+              <figure class="figure">
+                <img src="images/micro.png" class="img-fluid" alt="Responsive image">
+              </figure>
+            </div>
+            <h4>Secondary Monitor</h4>
+            <div class="col-lg-6 mx-auto d-block">
+              <figure class="figure">
+                <img src="images/second_screen_only.png" class="img-fluid" alt="Responsive image">
+                <figcaption class="figure-caption">Our curve affords a unique phenomena of control without the need to look down.</figcaption>
+              </figure>
+            </div>
+            <p>
+              The need for visual feedback about controlling a car not being driven is critical. Being able to see whether or not the command requested by the human to the car was heard allows for better confidence in the autonomous driving experience. The monitor is synchronized with the curved input control to allow for real-time feedback on what alterations to the current drive can be made.
             </p>
           </div>
         </div>
